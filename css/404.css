@@ -1,0 +1,6 @@
+
+.e404 {
+	background-image: url(<?php echo URL_imgs; ?>bkgs/Bkg_Home.jpg);
+    align-items: center !important;
+	height: 100vh;
+}
