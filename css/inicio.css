@@ -88,6 +88,7 @@ h1 {
   text-transform: uppercase;
   color: var(--main-color-tittle);
   font-size: 50px;
+  font-weight: 600
 }
 
 h2,
@@ -185,6 +186,16 @@ section .section-container {
   max-width: 100px;
 }
 
+.time-line-two::before{
+  background: #28348a;
+  content: '';
+  height: 1px;
+  position: absolute;
+  width: 59%;
+  margin: 52px;
+  left: 50px;
+}
+
 @media screen and (max-width: 768px){
   .consulting-and-software{
     padding: 20px;
@@ -218,13 +229,27 @@ section .section-container {
 /* <!-- OUR STATE-OF-THE-ART
 TECHNOLOGIES --> */
 
+
+
 .state-tecno img{
   max-width: 100px;
+  background-color: white;
+  
   
 }
 
 .state-tecno{
   padding-left: 100px;
+
+}
+
+.time-line-one::before {
+  background: #E6E6E6;
+  content: '';
+  height: 3px;
+  position: absolute;
+  width: 200%;
+  margin: 60px;
 
 }
 
@@ -250,6 +275,9 @@ TECHNOLOGIES --> */
   background: linear-gradient(to right, rgba(6,30,125,1) 0%, rgba(6,30,125,1) 36%, rgba(0,9,92,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#061e7d', endColorstr='#00095c', GradientType=1 );
 }
+.arrow-down img{
+  width: 40px;
+}
 
 .our-value h1{
   color: var(--main-color-tittle);
@@ -260,6 +288,30 @@ TECHNOLOGIES --> */
   color: white;
 }
 
+.our-value p{
+  font-size: 15px;
+}
+
+.time-line::before{
+  background: #E6E6E6;
+  content: '';
+  height: 1px;
+  position: absolute;
+  width: 85%;
+  margin: -20px;
+}
+
+.time-line-item::before{
+  content: "";
+  background-color: var(--main-color-tittle);
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  border-radius: 50%;
+  display: block;
+  top: -25px;
+  right: 100px;
+}
 
 @media screen and (max-width: 768px){
 
@@ -388,45 +440,10 @@ LOGOS
 *************/
 /* company logo @ mainNav*/
 .logoOmbu {
-  max-width: 300px;
+  max-width: 150px;
 }
 
-/* social network logos @ mainNav */
-.social-network {
-  display: flex;
-  flex-direction: row;
-}
-@media (min-width: 768px) {
-  .social-network {
-    flex-direction: column !important;
-    justify-content: center !important;
-    align-items: center !important;
-    position: fixed;
-    height: 300px;
-    top: calc(50% - 120px);
-  }
-}
-@media (max-width: 400px) {
-  .social-network {
-    display: none;
-  }
-}
 
-.logo-redes {
-  max-width: 70px;
-  padding: 20px;
-  
-}
-@media (min-width: 768px) {
-  .logo-redes {
-    margin: 0 !important;
-  }
-}
-@media (max-width: 455px) {
-  .logo-redes {
-    margin: 0 -10px !important;
-  }
-}
 
 .btn-send-form {
   color: black;
@@ -498,9 +515,10 @@ LOGOS
     HEADER
   **********/
 #mainNav {
-  height: 100px !important;
+  height: 50px !important;
   cursor: pointer;
   background-color: white;
+  font-size: 12px;
   /* burguer */
   /* APPLYING COMPANY COLOR TO BOOTSTRAP BURGUER */
   /* custom style for div collapse */
@@ -508,6 +526,7 @@ LOGOS
 #mainNav li a {
   font-weight: bolder;
   color: #204c6b;
+  text-transform: lowercase;
 }
 #mainNav li a:hover, #mainNav li a:visited {
   text-shadow: #33AFFF;
@@ -520,10 +539,9 @@ LOGOS
 #mainNav .dropdown-link .deep-dropdown-list {
   visibility: hidden !important;
   width: 250px;
-  border-radius: 10px;
   background: white;
   position: absolute;
-  top: 0;
+  top: -25px;
   opacity: 0;
   -webkit-box-shadow: 3px 13px 20px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 3px 13px 20px rgba(0, 0, 0, 0.1);
@@ -531,7 +549,7 @@ LOGOS
 }
 #mainNav .dropdown-link li {
   padding: 20px !important;
-  width: 100%;
+  width: 110%;
 }
 #mainNav .dropdown-link:hover .dropdown-list {
   visibility: visible !important;
@@ -549,6 +567,9 @@ LOGOS
 }
 #mainNav .custom-toggler.navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(27, 58, 80)' stroke-width='5' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 #mainNav .navbar-toggler {
   border: none !important;
@@ -600,6 +621,18 @@ LOGOS
   }
 }
 
+@media screen and (max-width: 812px){
+  #desktop-line{
+    visibility: hidden;
+  }
+}
+
+
+.top-boton a::hover{
+  color: white;
+
+}
+
 /*******************************
   THINKTRANSFORMATION SECTION
 ********************************/
@@ -624,7 +657,7 @@ LOGOS
 @media screen and (max-width: 768px){
   .think-transformation{
     background-size: cover;
-    padding: 20px;
+    padding: 100px;
     /* background-attachment: fixed */
   }
 
@@ -654,98 +687,19 @@ LOGOS
 
   .line-left{
     border-left: none;
+    border-bottom: 1px solid; 
+
   }
 
-
-}
-
-
-/*******************************
-  INNOVATION SECTION
-********************************/
-.lead-innovation {
-  margin-top: -30px !important;
-  background-size: 200%;
-  background-position: left;
-
-}
-.lead-innovation h2 {
-  text-transform: none !important;
-  margin-bottom: 40px;
-  padding-top: 10px !important;
-}
-.lead-innovation span {
-  font-weight: lighter;
-  color: #646464;
-}
-@media (max-width: 768px) {
-  .lead-innovation span {
-    line-height: 13px;
-    font-size: 13px !important;
+  .line-down{
+    border-bottom: 1px solid;
+    text-align: center;
+    padding-bottom: 10px;
   }
-}
-@media (min-width: 768px) {
-  .lead-innovation span {
-    font-size: 20px;
-  }
-}
-.lead-innovation span img {
-  max-width: 60px;
-}
-@media (max-width: 576px) {
-  .lead-innovation span img {
-    max-width: 30px;
-  }
-}
-@media (max-width: 768px) {
-  .lead-innovation span img {
-    max-width: 40px;
-  }
+
 }
 
 
-/*******************************
-  ABOUT SECTION
-********************************/
-.about-us {
-  padding-top: 80px;
-  background-color: #204c6b;
-}
-.about-us * {
-  color: white !important;
-}
-.about-us .profile-position {
-  font-size: 12px;
-  line-height: 10px;
-}
-@media (max-width: 768px) {
-  .about-us .profile-position {
-    font-size: 10px;
-  }
-}
-.about-us .profile-people {
-  display: flex;
-}
-.about-us .profile-people .profile-people-img {
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-}
-@media (max-width: 768px) {
-  .about-us .profile-people .profile-people-img {
-    width: 70px;
-    height: 70px;
-  }
-}
-.about-us .profile-people .profile-people-description img {
-  width: 15px;
-  margin-right: 3px;
-}
-@media (max-width: 768px) {
-  .about-us .profile-people .profile-people-description {
-    font-size: 10px;
-  }
-}
 
 /*******************************
   CONTACT SECTION
@@ -789,42 +743,89 @@ LOGOS
 /*******************************
 PRODUCTS SECTION
 ********************************/
+
 #products {
-  overflow: hidden;
-  margin: 0 !important;
-  padding: 0 !important;
-  vertical-align: bottom;
-  height: fit-content;
-}
-#products h3 {
-  text-transform: none !important;
+  background-image: url("../imgs/bkgs/Bkg_Section1.png");
+  
 }
 
-#loan-management{
-  padding-top: 178px !important;
+#products #our-products-items img {
+  height: 120px;
+  background-color: white;
+  border-radius: 50%;
+  margin-bottom: 25px;
 }
 
-/* Resolucion para IOS 415px*/
+.time-line-threr::before{
+  background: #E6E6E6;
+  content: '';
+  height: 1px;
+  position: absolute;
+  width: 73%;
+  margin: 60px;
+  right: 113px;
+}
 
-@media (max-width: 415px) {
+#products #our-products-items p{
+  font-size: 15px;
+  color: white;
+  text-align: initial;
+}
 
-  #loan-management p{    
-    padding-right: 20px;
+#products h2{
+  color: var(--main-color-tittle);
+
+}
+
+@media screen and (max-width: 768px){
+  
+  .time-line::before,
+  .time-line-one::before,
+  .time-line-two::before,
+  .time-line-threr::before,
+  .time-line-item::before{
+    visibility: hidden;
   }
+}
+
+
+
+/* ***************
+      key features
+      ************* */
+
+#key-features-items img{
+  width: 60px;
+}
+
+/* AL CREDIT */
+
+#al-credit{
+  background-color: #e6e6e6;
+}
+
+#al-credit .media img{
+  height: 50px;
+  background-color: white;
+  border-radius: 50px;
+}
+
+
+/* fin de products */
+
+/* WHITE LABEL */
+
+#white-label img{
+  max-height: 300px;
+}
+
+.gray h1{
+  color: gray !important;
 }
 
 /* Configuracion IOS Horizontal */
 
 @media screen and (orientation: landscape) and (max-width: 812px) {
-  #products {
-
-    max-height: 100% !important;
-  }
-
-  #services {
-
-    max-height: 100% !important;
-  }
 
   #togglerBurguer {
     max-height: 100vh !important;
@@ -835,31 +836,9 @@ PRODUCTS SECTION
     grid-template-columns: repeat(2, 2fr) !important;
   }
 
-}
-
-    
-
-@media (min-width: 768px) {
-  #products {
-    max-height: 100vh;
-  }
-}
-#products .is-hidden {
-  display: none !important;
-}
-#products .active-item {
-  color: #5ed1ef;
-  background-color: #f3f1f0;
-  border-radius: 20px;
-}
-@media (min-width: 576px) {
-  #products #loan-management {
-    padding-left: 30px;
-  }
+}  
 
 
-
-}
 
 @media (max-width: 576px){
 
@@ -874,252 +853,93 @@ PRODUCTS SECTION
   .colection-item{
     
     grid-template-columns: repeat(4, 1fr);
-  }
-
-  
+  }  
 }
 
 
-@media (min-width: 992px) {
-  #products #loan-management {
-    min-height: 100vh;
-    padding: 0 0 0 250px;
-  }
-}
-@media (min-width: 992px) {
-  #products #loan-management p {
-    width: 45%;
-  }
-}
-#products #loan-management #key-features {
-  margin: 0 !important;
-  color: white !important;
-  background-color: #204c6b;
-}
-@media (max-width: 992px) {
-  #products #loan-management #key-features {
-    padding: 5px;
-  }
-}
-@media (min-width: 992px) {
-  #products #loan-management #key-features {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    padding: 20px;
-    padding-bottom: 0;
-  }
-}
-#products #loan-management #key-features div.underlined-box {
-  border-bottom: 1px solid white;
-}
-#products #loan-management #key-features h4 {
-  text-transform: none !important;
-  padding: 0 20px;
-  margin: 0 auto !important;
-  color: white !important;
-}
-#products #loan-management #key-features ul {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin: 10px auto !important;
-}
-@media (max-width: 992px) {
-  #products #loan-management #key-features ul {
-    padding: 0 10px !important;
-  }
-}
-@media (min-width: 992px) {
-  #products #loan-management #key-features ul {
-    padding: 0 60px !important;
-    margin-top: 5px !important;
-  }
-}
-#products #loan-management #key-features ul li {
-  width: calc(100%/2);
-  list-style-position: inside;
-}
-@media (max-width: 576px) {
-  #products #loan-management #key-features ul li {
-    font-size: 12px;
-  }
-}
-@media (min-width: 992px) {
-  #products #loan-management #key-features ul li {
-    margin: 5px 0 !important;
-    width: calc(100%/3);
-  }
-}
-#products #loan-management #key-features ul li span img {
-  width: 20px !important;
-  height: 20px !important;
 
-}
-#products #loan-management,
-#products #end-to-end-lending,
-#products #ai-credit-scoring,
-#products #machine-learning,
-#products #payment-solutions,
-#products #business-outcomes {
-  background-image: url("../imgs/bkgs/bkg_Products.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
-  display: flex;
-  width: 100vw;
-  padding-top: 170px;
-}
-@media (max-width: 768px) {
-  #products #end-to-end-lending,
-  #products #ai-credit-scoring,
-  #products #machine-learning,
-  #products #payment-solutions,
-  #products #business-outcomes {
-    padding-bottom: 100px;
-  }
-}
-@media (min-width: 768px) {
-
-  #products #end-to-end-lending,
-  #products #ai-credit-scoring,
-  #products #machine-learning,
-  #products #payment-solutions,
-  #products #business-outcomes {
-    width: 100%;
-    min-height: 100vh;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding-top: 170px;
-    padding-left: 70px;
-  }
-}
-@media (min-width: 992px) {
-  #products #end-to-end-lending,
-  #products #ai-credit-scoring,
-  #products #machine-learning,
-  #products #payment-solutions,
-  #products #business-outcomes {
-    padding: 170px 150px;
-  }
-}
-@media (min-width: 992px) {
-  #products #end-to-end-lending div,
-  #products #ai-credit-scoring div,
-  #products #machine-learning div,
-  #products #payment-solutions div,
-  #products #business-outcomes div {
-    width: 60%;
-    max-width: 500px;
-  }
-}
 
 /*******************************
     SERVICES SECTION
 ********************************/
-#services {
-  overflow: hidden;
-  margin: 0 !important;
-  padding: 0 !important;
-  vertical-align: bottom;
-  height: fit-content;
-}
-#services h3 {
-  text-transform: none !important;
-}
-@media (min-width: 768px) {
-  #services {
-    max-height: 100vh;
-  }
-}
-#services .is-hidden {
-  display: none !important;
-}
-#services .active-item {
-  color: #5ed1ef;
-  background-color: #f3f1f0;
-  border-radius: 20px;
-}
-@media (min-width: 768px) {
-  #services #digital-transformation {
-    padding: 0 250px;
-  }
+#our-services{
+  background-color: #3da1f3;
 }
 
-@media (max-width: 415px) {
+#our-services-items img{
+  height: 50%;
+  background-color: white;
+  border-radius: 50px;
+}
 
-  #digital-transformation {
-    padding-top: 170px;
-  }
+
+
+/* ++++++++++++++++++++++
+    digital transformation
+    ********************* */
+
+#digital-transform-items img{
+  height: 120px;
+  background-color: #28348a;
+  border-radius: 40px;
+  margin-bottom: 30px;
+}
+
+/* **********
+    CTO SERVICE
+    ********* */
+
+#cto-service {
+  background-image: url(../imgs/bkgs/Bkg_Section1.png);
+  
+}
+
+#cto-service-items h5{
+  color: white;
+}
+
+#cto-service-items img{
+  width: 150px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+
+
+/* ***********
+    DATA MODERNIZATION
+    ************ */
+#data-modern-items img {
+  height: 100px;
+  background-color: #e6e6e6;
+  border-radius: 50%;
 
 }
-#services #digital-transformation,
-#services #cto-services,
-#services #data-modernization,
-#services #cloud-service-integration-support,
-#services #biometric-solutions,
-#services #app-developments {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top right;
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 60px;
-  width: 100%;
+
+
+
+
+  
+
+/* ********
+    CLOUD SERVICES & INTEGRATION SUPPORT
+    ******** */
+
+#cloud-service {
+  background-color: #e6e6e6;
 }
-@media (min-width: 768px) {
-  #services #digital-transformation,
-  #services #cto-services,
-  #services #data-modernization,
-  #services #cloud-service-integration-support,
-  #services #biometric-solutions,
-  #services #app-developments {
-    min-height: 500px;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
+
+#cloud-service-items h5{
+  font-size: 15px;
 }
-@media (min-width: 992px) {
-  #services #digital-transformation div,
-  #services #cto-services div,
-  #services #data-modernization div,
-  #services #cloud-service-integration-support div,
-  #services #biometric-solutions div,
-  #services #app-developments div {
-    width: 60%;
-  }
+
+#cloud-service-items img{
+  height: 100px;
+  border-radius: 15%;
+  background-color: white;
+
 }
-#services #digital-transformation,
-#services #cto-services,
-#services #data-modernization,
-#services #cloud-service-integration-support,
-#services #biometric-solutions,
-#services #app-developments {
-  padding-top: 178px;
-}
-@media (min-width: 768px) {
-  #services #digital-transformation,
-  #services #cto-services,
-  #services #data-modernization,
-  #services #cloud-service-integration-support,
-  #services #biometric-solutions,
-  #services #app-developments {
-    padding-top: 178px;
-    padding-left: 70px;
-    height: 100vh;
-  }
-}
-@media (min-width: 992px) {
-  #services #digital-transformation,
-  #services #cto-services,
-  #services #data-modernization,
-  #services #cloud-service-integration-support,
-  #services #biometric-solutions,
-  #services #app-developments {
-    padding: 250px 250px;
-  }
-}
+
 
 /**********
     PARTNER
@@ -1252,6 +1072,31 @@ PRODUCTS SECTION
 
 #resource a {
   color: var(--main-color-tittle);
+}
+
+/* *****************
+      ABOUT US 
+      *********** */
+#aboutus{
+  background-color: #e6e6e6;
+}
+
+#aboutus h1{
+  color: black;
+}
+
+#about-us-items img{
+  width: 150px;
+  border-radius: 50%;
+}
+
+#about-us-items p {
+  font-size: 12px;
+}
+
+#about-us-items h5{
+  color: var(--main-color-blue);
+  
 }
 
 

@@ -1,101 +1,170 @@
 <?php
 ?>
 <!-- SERVICES -->
-<section class="services d-flex flex-column justify-content-start align-items-start" id="services">
-  <div id="in-page-menu">
-    <ul>
-      <li><a class="link-dynamic-menu active-item" href="<?php echo BASE_URL; ?>services#digital-transformation">Digital
-          Transformation Consulting</a>
-      </li>
-      <li>
-        <a class="link-dynamic-menu" href="<?php echo BASE_URL; ?>services#cto-services">CTO Services</a>
-      </li>
-      <li>
-        <a class="link-dynamic-menu" href="<?php echo BASE_URL; ?>services#data-modernization">Data Modernization</a>
-      </li>
-      <li>
-        <a class="link-dynamic-menu" href="<?php echo BASE_URL; ?>services#cloud-service-integration-support">Cloud
-          Services</a>
-      </li>
-      <li>
-        <a class="link-dynamic-menu" href="<?php echo BASE_URL; ?>services#biometric-solutions">Biometric Solutions</a>
-      </li>
-    </ul>
-  </div>
-  <div id="container-dynamic-content">
-    <!--
-    ===================================
-        DIGITAL TRANSFORMATION TAB
-    ===================================
-    -->
-    <div class="tab-section" id="digital-transformation">
-      <h3>Digital Transformation Consulting</h3>
-      <p>Capitalize on New-Age Digital Ecosystems to enable product innovation, enhance customer
-        experience and boost operational efficiency</p>
 
-      <p>Growing emphasis on continuous innovation driving the demand for state-of-the-art digital
-        capabilities. However, a lack of understanding domain and its measurable impact pose a
-        challenge in leveraging digital technology across the business value chain</p>
-
+<section id="our-services">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1>OUR SERVICES</h1>
+      </div>
+      <div class="col-lg-12 d-flex justify-content-around text-center" id="our-services-items">
+        <div class="col-lg-3">
+          <img src="../../imgs/services/services_01.svg" alt=""><br><br>
+          <h5><strong>Digital</strong> Transformation Consulting</h5>
+        </div>
+        <div class="col-lg-3">
+          <img src="../../imgs/services/services_02.svg" alt=""><br><br>
+          <h5><strong>CTO</strong> Services</h5>
+        </div>
+        <div class="col-lg-3">
+          <img src="../../imgs/services/services_03.svg" alt=""><br><br>
+          <h5>Data <strong>Modernization</strong></h5>
+        </div>
+        <div class="col-lg-3">
+          <img src="../../imgs/services/services_04.svg" alt=""><br><br>
+          <h5>Cloud <strong>Services</strong></h5>
+        </div>
+      </div>
     </div>
-    <!--
-    ===================================
-        CTO SERVICES TAB
-    ===================================
-    -->
-    <div class="tab-section is-hidden" id="cto-services">
-      <h3>CTO Services</h3>
-      <p>We provide CTO services for startups that lacks IT teams from their beginning</p>
-      <p>Also provide these services for our clients that initiate a digital transformation and want
-        to navigate throughout this process with a seasoned team like ours</p>
-    </div>
-    <!--
-    ===================================
-        DATA MODERNIZATION TAB
-    ===================================
-    -->
-    <div class="tab-section is-hidden" id="data-modernization">
-      <h3>Data Modernization</h3>
-      <p>Data Driven Management</p>
-      <p>Use of data to improve the efficiency of operations and drive innovation</p>
-      <p> Build a Data Driven Culture through the company</p>
-      <p>Drives smarter business decisions</p>
-
-    </div>
-    <!--
-    ===================================
-        cloud-service TAB
-    ===================================
-    -->
-    <div class="tab-section is-hidden" id="cloud-service-integration-support">
-      <h3>Cloud Services & Integration Support</h3>
-      <p>Transition to Hybrid Cloud Infrastructure for Business Growth and Agility</p>
-      <p>Help companies enhance operational agility by migrating enterprise applications from on-premise
-        to
-        cloud. Worked with leading cloud platforms such as AWS, Azure and Google Cloud</p>
-      <p>Scalability to meet increased business needs</p>
-      <p>Business continuity through available infrastructure</p>
-    </div>
-    <!--
-    ===================================
-        biometric-solutions TAB
-    ===================================
-    -->
-    <div class="tab-section is-hidden" id="biometric-solutions">
-      <h3>Biometric Solutions</h3>
-      <p>Identifying our customers</p>
-      <p>Easily Securely biometric technology</p>
-      <p>Solution that is easily deployed, secure and scalable for applications installation</p>
-      <p>Services can be performed even in the most remote area with lack of infrastructure</p>
-      <p>Peace of mind transactions conducted in a secure environment</p>
-      <p>Multi-factor authentication</p>
+    <div class="row justify-content-center text-center">
+      <div class="learn-more">
+        <a href="#">Learn More</a>
+      </div>
     </div>
   </div>
 </section>
-<script>
-  const linksNodes = window.document.body.querySelectorAll(".link-dynamic-menu");
-  const linksArray = Array.apply(null, linksNodes);
-  for (let i = 0; i < linksArray.length; i++) {
-    linksArray[i].addEventListener('click', updateWindow)
-  }
-</script>
+
+<!-- **************
+        DIGITAL TRANSFORMATION CONSULTING
+      **************-->
+
+<section id="digital-transform">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 pb-lg-5">
+        <h1>DIGITAL TRANSFORMATION CONSULTING</h1>
+      </div>
+      <div class="row justify-content-around text-center" id="digital-transform-items">
+        <div class="col-lg-3">
+          <img src="../../imgs/services/services_05.svg" alt="">
+          <p>Capitalize on New-Age Digital Ecosystems to enable product innovation, enhance customer experience and boost operational effciency</p>
+        </div>
+        <div class="col-lg-3">
+          <img src="../../imgs/services/services_06.svg" alt="">
+          <p>Growing emphasis on continuous innovation driving the demand for state-of-the-art digital capabilities</p>
+        </div>
+        <div class="col-lg-3">
+          <img src="../../imgs/services/services_07.svg" alt="">
+          <p>However, a lack of understanding domain and its measurable impact pose a challenge in leveraging digital technology across the business value chain</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ************
+      CTO SERVICE
+    ************* -->
+
+<section id="cto-service">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 pb-lg-5">
+        <h1>CTO SERVICE</h1>
+      </div>
+      <div class="row col-lg-12 d-flex justify-content-between text-center" id="cto-service-items">
+        <div class="col-lg-5">
+          <img src="../../imgs/services/services_08.svg" alt=""><br><br>
+          <h5>We provide CTO services for startups that lacks IT teams from their beginning</h5>
+        </div>
+        <div class="col-lg-5">
+          <img src="../../imgs/services/services_09.svg" alt=""><br><br>
+          <h5>Also provide thse service for our clients that initiate a digital transformation and want to navigate throughout this process whith a seasoned team like ours</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ***********
+      DATA MORDERNIZATION
+    ************ -->
+
+  <section id="data-modernization">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 pb-lg-5">
+          <h1>DATA MODERNIZATION</h1>
+        </div>
+        <div class="row col-lg-12 justify-content-center" id="data-modern-items">
+          <div class="col-lg-10">
+            <div class="media">
+              <img class="mr-3" src="../../imgs/services/services_10.svg" alt="">
+              <div class="media-body mt-lg-3">
+                <h5 class="mt-0">Data Driven Management</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-10">
+            <div class="media">
+              <img class="mr-3" src="../../imgs/services/services_11.svg" alt="">
+              <div class="media-body mt-lg-3">
+                <h5 class="mt-0">Use of Data to improvive the efficiency of operations and drive innovation</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-10">
+            <div class="media">
+              <img class="mr-3" src="../../imgs/services/services_12.svg" alt="">
+              <div class="media-body mt-lg-3">
+                <h5 class="mt-0">Build a data Drive Culture through the company</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-10">
+            <div class="media">
+              <img class="mr-3" src="../../imgs/services/services_13.svg" alt="">
+              <div class="media-body mt-lg-3">
+                <h5 class="mt-0">Drives Smarter business decisions</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- *********
+      CLOUD SERVICES & INTEGRATION SUPPORT
+    ********** -->
+
+  <section id="cloud-service">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 pb-lg-5">
+          <h1>CLOUD SERVICE
+            <H1>& INTEGRATION SUPPORT</H1>
+          </h1>
+        </div>
+        <div class="row col-lg-12 text-center" id="cloud-service-items">
+          <div class="col-lg-3">
+            <img src="../../imgs/services/services_14.svg" alt=""><br><br>
+            <h5>Transition hto Hybrid Cloud Infrastructure for Business Growth and Agility</h5>
+          </div>
+          <div class="col-lg-3">
+            <img src="../../imgs/services/services_15.svg" alt=""><br><br>
+            <h5>Transition hto Hybrid Cloud Infrastructure for Business Growth and Agility</h5>
+          </div>
+          <div class="col-lg-3">
+            <img src="../../imgs/services/services_16.svg" alt=""><br><br>
+            <h5>Transition hto Hybrid Cloud Infrastructure for Business Growth and Agility</h5>
+          </div>
+          <div class="col-lg-3">
+            <img src="../../imgs/services/services_17.svg" alt=""><br><br>
+            <h5>Transition hto Hybrid Cloud Infrastructure for Business Growth and Agility</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

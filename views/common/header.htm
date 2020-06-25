@@ -10,21 +10,7 @@ HEADER
     <a href="<?php echo BASE_URL; ?>">
       <img src="imgs/logos/logo_OMbuTech.png" class="logoOmbu ml-2 ml-md-5" alt="logoOmbu">
     </a>
-    <!-- SOCIAL -->
-    <ul class="d-none d-lg-flex list-unstyled justify-content-between social-network">
-      <li class="nav-item p-0 m-0">
-        <a href="https://twitter.com/techombu" onclick="window.open(window.location.href,'_blank')">
-          <img src="imgs/logos/logo_twitter-01.png" alt="twitter" class="logo-redes mx-1 mx-sm-3">
-        </a>
-      </li>
-      <li class="nav-item p-0 m-0">
-        <a class="nav-link p-0 m-0" href="https://www.linkedin.com/company/ombu-tech/" onclick="window.open(window.location.href,'_blank')">
-          <img src="imgs/logos/logo_linkendin-01.png" alt="linkedin" class="logo-redes mx-1 mx-sm-3">
-        </a>
-        </a>
-      </li>
-
-    </ul>
+    
     <!-- BURGUER CONTAINER -->
     <a href="#togglerBurguer" class="navbar-toggler">
       <!-- BURGUER  -->
@@ -90,55 +76,59 @@ HEADER
 
     </div>
     <!-- MENU DESKTOP -->
-    <div class="d-none d-lg-flex mr-5">
+    <div class="d-none d-lg-flex d-flex align-items-center" id="desktop-line">
       <ul class="navbar smooth-scroll navbar-nav text-dark">
-        <li class="mr-3 d-flex align-items-center dropdown-link">
+        <li class="d-flex align-items-center dropdown-link">
           <!-- dropdown link -->
-          <a class="px-lg-4" href='<?php echo BASE_URL; ?>products'>PRODUCTS</a>          
+          <a class="px-lg-4" href='<?php echo BASE_URL; ?>products'>PRODUCTS</a>
+          <!-- droopdown llist -->
+          <ul class="dropdown-list">
+            <li class="deepdown-link">
+              <span style="color: var(--main-color-tittle); font-size:16px; margin-right: 5px;">&#8594;</span>
+              <a href='<?php echo BASE_URL; ?>products#products' onclick="updateWindow()">Loan Management</a>
+            </li>
+          </ul>          
         </li>
       </ul>
-      <li class="mr-3 d-flex align-items-center dropdown-link">
+      <li class="d-flex align-items-center dropdown-link">
         <!-- dropdown item -->
         <a class="px-lg-4" href='<?php echo BASE_URL; ?>services'>SERVICES</a>
         <!-- dropdown list -->
         <ul class="dropdown-list">
           <li class="deepdown-link">
             <!-- deep link -->
-            <a href='<?php echo BASE_URL; ?>services' onclick="updateWindow()">Digital
+            <span style="color: var(--main-color-tittle); font-size:16px; margin-right: 5px;">&#8594;</span>
+            <a href='<?php echo BASE_URL; ?>services#digital-transform' onclick="updateWindow()">Digital
               Transformation Consulting</a>
-            <!-- deep list -->
-            <ul class="deep-dropdown-list"><br>
-            
-              <li>
-                <a href='<?php echo BASE_URL; ?>services#cto-services' onclick="updateWindow()">CTO Services</a>
-              </li>
-              <li>
-                <a href='<?php echo BASE_URL; ?>services#data-modernization' onclick="updateWindow()">Data
-                  Modernization</a>
-              </li>
-              <li>
-                <a href='<?php echo BASE_URL; ?>services#cloud-service-integration-support'
-                  onclick="updateWindow()">Cloud Services &
-                  Integration Support</a>
-              </li>
-              <li>
-                <a href='<?php echo BASE_URL; ?>services#biometric-solutions' onclick="updateWindow()">Biometric
-                  Solutions</a>
-              </li>
-            </ul>
+            <div class="dropdown-divider"></div>
+            <span style="color: var(--main-color-tittle); font-size:16px; margin-right: 5px;">&#8594;</span>
+            <a href='<?php echo BASE_URL; ?>services#cto-service' onclick="updateWindow()">CTO Service</a>
+            <div class="dropdown-divider"></div>
+            <span style="color: var(--main-color-tittle); font-size:16px; margin-right: 5px;">&#8594;</span>
+            <a href='<?php echo BASE_URL; ?>services#data-modernization' onclick="updateWindow()">Data Modernization</a>
+            <div class="dropdown-divider"></div>
+            <span style="color: var(--main-color-tittle); font-size:16px; margin-right: 5px;">&#8594;</span>
+            <a href='<?php echo BASE_URL; ?>services' onclick="updateWindow()">Cloud Service</a>
+            <div class="dropdown-divider"></div>
+            <span style="color: var(--main-color-tittle); font-size:16px; margin-right: 5px;">&#8594;</span>
+            <a href='<?php echo BASE_URL; ?>services' onclick="updateWindow()">Biometric Solutions</a>
           </li>
         </ul>
       </li>
-      <li class="mr-3 d-flex align-items-center">
-        <a class="px-lg-4" href="#about-us">ABOUT US</a>
+      <li class="d-flex align-items-center">
+        <a class="px-lg-4" href="<?php echo BASE_URL; ?>aboutus">ABOUT US</a>
       </li>
 
-      <li class="mr-3 d-flex align-items-center">
+      <li class="d-flex align-items-center">
         <a class="px-lg-4" href="#partner-logo">PARTNERS</a>
       </li>
 
-      <li class="mr-3 px-lg-4 d-flex align-items-center">
-        <a href="#contact-us" class="btn btn-dark badge-pill text-light px-lg-5">CONTACT US</a>
+      <li class="d-flex aling-items-center">
+        <a class="px-lg-4" href="#notice-resource">RESOURCES</a>
+      </li>
+
+      <li class="px-lg-4 d-flex align-items-center">
+        <a href="#contact-us" class="learn-more top-boton px-lg-5">CONTACT US</a>
       </li>
       </ul>
     </div>
