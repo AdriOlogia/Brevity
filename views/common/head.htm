@@ -16,6 +16,9 @@
 	<link rel="icon" type="image/png" href="<?php echo SITE_mainlogo; ?>" />
 	<link rel="author" type="text/plain" href="<?php echo SITE_humans; ?>" />
 
+	
+
+
 	<?php
 if (!empty($objeto_contenido->geo)) {
 	foreach ($objeto_contenido->geo as $key => $value) {
@@ -68,6 +71,12 @@ if (!empty($objeto_contenido->seo)) {
 		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
 	</script>
 
+	<!--carrusel  -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+	<link rel="stylesheet" type="text/css" href="https://kenwheeler.github.io/slick/slick/slick-theme.css"/>
+
+	
 	
 	
 	<link rel="stylesheet" type="text/css" media="all" href="<?php 
@@ -91,7 +100,7 @@ if (!empty($objeto_contenido->customjs)) {
 	}
 }
 ?>
-
+	
 	<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
 		crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">

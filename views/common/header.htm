@@ -83,9 +83,8 @@ HEADER
           <a class="px-lg-4" href='<?php echo BASE_URL; ?>products'>PRODUCTS</a>
           <!-- droopdown llist -->
           <ul class="dropdown-list">
-            <li class="deepdown-link">
-              <span style="color: var(--main-color-tittle); font-size:16px; margin-right: 5px;">&#8594;</span>
-              <a href='<?php echo BASE_URL; ?>products#products' onclick="updateWindow()">Loan Management</a>
+            <li class="dropdown-link">
+              <a href='<?php echo BASE_URL; ?>products#products' onclick="updateWindow()"><span style="color: var(--main-color-tittle); font-size:16px; margin-right: 5px;">&#8594;</span>Loan Management</a>
             </li>
           </ul>          
         </li>
@@ -127,8 +126,11 @@ HEADER
         <a class="px-lg-4" href="#notice-resource">RESOURCES</a>
       </li>
 
-      <li class="px-lg-4 d-flex align-items-center">
-        <a href="#contact-us" class="learn-more top-boton px-lg-5">CONTACT US</a>
+      <li class="d-flex align-items-center">
+        <a href="<?php echo BASE_URL; ?>contactus" class="top-boton px-lg-4 contact-us-link">CONTACT US</a>
+      </li>
+      <li class="idioms px-lg-4">
+        <a href="#" class="">English</a> <img src="../../imgs/arrow-down.svg" alt="">
       </li>
       </ul>
     </div>
