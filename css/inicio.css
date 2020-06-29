@@ -235,14 +235,13 @@ TECHNOLOGIES --> */
 .state-tecno img{
   width: 100px;
   background-color: white;
-  
-  
+  min-height: 110px;
 }
 
-.state-tecno{
-  padding-left: 100px;
-
+.state-tecno p {
+  font-size: 15px;
 }
+
 
 .time-line-one::before {
   background: #E6E6E6;
@@ -265,8 +264,6 @@ TECHNOLOGIES --> */
 /* our value proposition */
 
 .our-value {
-
-  padding-left: 100px;
   background: rgba(6,30,125,1);
   background: -moz-linear-gradient(left, rgba(6,30,125,1) 0%, rgba(6,30,125,1) 36%, rgba(0,9,92,1) 100%);
   background: -webkit-gradient(left top, right top, color-stop(0%, rgba(6,30,125,1)), color-stop(36%, rgba(6,30,125,1)), color-stop(100%, rgba(0,9,92,1)));
@@ -353,7 +350,6 @@ TECHNOLOGIES --> */
 /* WE ARE */
 .we-are{
   background-color: rgb(204, 204, 204);
-  padding-left: 100px;
 }
 
 .we-are img{
@@ -657,11 +653,6 @@ LOGOS
 /*******************************
   WHATWEDO SECTION
 ********************************/
-.what-we-do {
-  padding-left: 100px;
-  
-}
-
 .line-left{
   border-left: solid black;
 }
@@ -950,6 +941,16 @@ PRODUCTS SECTION
 /**********
     PARTNER
   **********/
+#partner-logo{
+  min-height: 60vh;
+}
+
+#clients-items{
+  background-color: 0px 10px 5px 0px rgba(168,163,168,1);
+  -webkit-box-shadow: 0px 10px 5px 0px rgba(168,163,168,1);
+  -moz-box-shadow: 0px 10px 5px 0px rgba(168,163,168,1);
+  box-shadow: 0px 10px 5px 0px rgba(168,163,168,1);
+}
 
 #partner-logo h1{
   text-align: left;
@@ -974,28 +975,26 @@ PRODUCTS SECTION
 .news-cards img{
   width:  100%;
   height: 60px;
-  margin-top: 20px;
-
+  margin: 10px 0;
 }
 
 .news-cards::before{
-  background: #28348a;
+  background: #e5e5e5;
   content: '';
   height: 1px;
   position: absolute;
   width: 200%;
-  margin: 130px;
+  margin: 120px 0;
   right: -300px;
 }
 
 .partner-galeria {
-  clip-path: polygon(50% 0%, 100% 33%, 100% 70%, 50% 100%, 0 70%, 0 30%);
-  background-color: #e6e6e6;
+  clip-path: polygon(50% 15%, 100% 30%, 100% 70%, 50% 85%, 0 70%, 0 30%);
+  background-color: #fff;
   display: inline-block;
   margin: 20px;
   padding: 60px 20px;
   object-fit: contain;
-
 }
 
 @media (max-width: 576px) {
@@ -1083,7 +1082,8 @@ PRODUCTS SECTION
 
 .media-body p{
   color: black;
-  font-size: 15px;
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 
 #resource a {
@@ -1216,7 +1216,66 @@ PRODUCTS SECTION
   width: 200px;
 }
 
+.slider {
+  width: 75%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
 
+.slider::before{
+  background: #e5e5e5;
+  content: '';
+  height: 1px;
+  position: absolute;
+  width: 200%;
+  margin: 115px 0;
+  right: -300px;
+}
 
+.regular .polygon {
+  clip-path: polygon(50% 15%, 85% 30%, 85% 70%, 50% 85%, 15% 70%, 15% 30%);
+  background-color: #e5e5e5;
+  margin: 20px;
+  padding: 60px 20px;
+  max-height: 200px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.slick-slide {
+margin: 0px 20px;
+}
+
+.slick-slide img {
+  display: inline-block;
+  height: 70px;
+  width: 140px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+color: black;
+}
+
+.slick-slide {
+  transition: all ease-in-out .3s;
+}
+
+@media (max-width: 576px) {
+  
+  .slick-slide img {
+    display: inline-block;
+    height: 80px;
+    width: 150px;
+  }
+
+  .regular .polygon {
+    clip-path: polygon(50% 10%, 100% 30%, 100% 70%, 50% 90%, 0% 70%, 0% 30%);
+  }
+
+  .slider::before {
+    display:none;
+  }
+}
 
 /*# sourceMappingURL=inicio.css.map */

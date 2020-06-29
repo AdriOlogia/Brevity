@@ -149,26 +149,25 @@ TECHNOLOGIES -->
       </div>
     </div>
     <div class="row d-flex justify-content-around text-center time-line-one">
-      <div class="col-lg-2">
-        <img src="../../imgs/tecno-1.svg" alt="" /> <br />
-        <span>Artificial inteligence</span>
+      <div class="col-lg-2 col-md-6">
+        <img src="../../imgs/tecno-1.svg" alt="Artificial inteligence" />
+        <p>Artificial inteligence</p>
       </div>
-      <div class="col-lg-2">
-        <img src="../../imgs/tecno-2.svg" alt="" /><br />
-        Machine Learning
+      <div class="col-lg-2 col-md-6">
+        <img src="../../imgs/tecno-2.svg" alt="Machine Learning" />
+        <p>Machine Learning</p>
       </div>
-      <div class="col-lg-2">
-        <img src="../../imgs/tecno-3.svg" alt="" /><br />
-        <br />
-        Data modernization
+      <div class="col-lg-2 col-md-6">
+        <img src="../../imgs/tecno-3.svg" alt="Data modernization" />
+        <p>Data modernization</p>
       </div>
-      <div class="col-lg-2">
-        <img src="../../imgs/tecno-4.svg" alt="" /> <br />
-        Cloud services
+      <div class="col-lg-2 col-md-6">
+        <img src="../../imgs/tecno-4.svg" alt="Cloud services" />
+        <p>Cloud services</p>
       </div>
-      <div class="col-lg-2">
-        <img src="../../imgs/tecno-5.svg" alt="" /> <br />
-        Biometric solutions
+      <div class="col-lg-2 col-md-12">
+        <img src="../../imgs/tecno-5.svg" alt="Biometric solutions" />
+        <p>Biometric solutions</p>
       </div>
     </div>
   </div>
@@ -245,32 +244,37 @@ TECHNOLOGIES -->
 </section>
 
 <!-- PARTNERS-->
-<section id="partner-logo" class="container-fluid">
-  <div class="colection">
-    <h1>OUR PARTNERS</h1>
-    <span class="news-cards">
-      <span class="partner-galeria">
-        <img src="../../imgs/clients/brevity.png" alt="" />
-      </span>
-      <span class="partner-galeria">
-        <img src="../../imgs/clients/grupo-metropol-logo.png" alt="" />
-      </span>
-      <span class="partner-galeria">
-        <img src="../../imgs/clients/TMLogo.png" alt="" />
-      </span>
-      <span class="partner-galeria">
-        <img src="../../imgs/clients/logo_redATM.png" alt="" />
-      </span>
-      <span class="partner-galeria">
-        <img src="../../imgs/clients/logo_octagon.png" alt="" />
-      </span>
-      <span class="partner-galeria">
-        <img src="../../imgs/clients/Copy of ORIGINAL-RGB.png" alt="" />
-      </span>
-      <span class="partner-galeria">
-        <img src="../../imgs/clients/Logo Saltedge.png" alt="" />
-      </span>
-    </span>
+<section id="partner-logo" class="">
+  <div class="container">
+    <div class="row">
+      <div class="col lg-12">
+        <h1>OUR CLIENTS</h1>
+      </div>
+      <div class="col-lg-12" id="clients-items">
+        <div class="regular slider">
+          <div class="polygon">
+            <!-- <img src="http://placehold.it/350x300?text=1"> -->
+            <img class="img-fluid" src="../../imgs/clients/brevity.png" alt="Brevity" />
+          </div>
+          <div class="polygon">
+            <!-- <img src="http://placehold.it/350x300?text=2"> -->
+            <img class="img-fluid" src="../../imgs/clients/grupo-metropol-logo.png" alt="Grupo Metropol" />
+          </div>
+          <div class="polygon">
+            <!-- <img src="http://placehold.it/350x300?text=3"> -->
+            <img class="img-fluid" src="../../imgs/clients/TMLogo.png" alt="Toyota Misiones" />
+          </div>
+          <div class="polygon">
+            <!-- <img src="http://placehold.it/350x300?text=4"> -->
+            <img class="img-fluid" src="../../imgs/clients/logo_redATM.png" alt="Red ATM" />
+          </div>
+          <div class="polygon">
+            <!-- <img src="http://placehold.it/350x300?text=5"> -->
+            <img class="img-fluid" src="../../imgs/clients/logo_octagon.png" alt="Octagon" />
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -340,21 +344,21 @@ TECHNOLOGIES -->
   <div class="container">
     <div class="row">
       <div class="col-lg-12 justify-content-center">
-        <h1>OUR CLIENTS</h1>
+        <h1>OUR PARTNERS</h1>
       </div>
       <div class="col-lg-12" id="partners-title">
         <div class="our-partners">
-          <div mx-lg-5 >
-            <img src="../../imgs/partners/credolab.png" alt="">
+          <div class="mx-lg-5">
+            <img src="../../imgs/partners/credolab.png" alt="Credolab">
           </div>
-          <div mx-lg-5 >
-            <img src="../../imgs/partners/infobipp.png" alt="">
+          <div class="mx-lg-5">
+            <img src="../../imgs/partners/infobipp.png" alt="Infobip">
           </div>
-          <div mx-lg-5 >
-            <img src="../../imgs/partners/insider.jpeg" alt="">
+          <div class="mx-lg-5">
+            <img src="../../imgs/partners/insider.jpeg" alt="Insider">
           </div>
-          <div mx-lg-5 >
-            <img src="../../imgs/partners/qlikq.png" alt="">
+          <div class="mx-lg-5">
+            <img src="../../imgs/partners/qlikq.png" alt="QLikq">
           </div>    
         </div>
       </div>
@@ -414,13 +418,55 @@ TECHNOLOGIES -->
 <script type="text/javascript">
   $(document).ready(function(){
     $('.our-partners').slick({
-    dots:true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,      
+      dots:true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,      
+    });
+
+    $('.regular').slick({
+      dots:false,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      infinite: true,
+      autoplay:true,
+      responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          autoplay:true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          autoplay:true,
+          arrows: false
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          autoplay:true,
+          arrows: false
+        }
+      }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
+    });
   });
-});
 </script>
 
 
