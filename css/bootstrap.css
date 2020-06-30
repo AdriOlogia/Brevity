@@ -3385,6 +3385,8 @@ input[type="button"].btn-block {
   margin: 0.5rem 0;
   overflow: hidden;
   border-top: 1px solid #e9ecef;
+  width: 100%;
+  margin-left: -12px;
 }
 
 .dropdown-item {
