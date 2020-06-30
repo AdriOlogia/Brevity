@@ -701,6 +701,11 @@ LOGOS
   background-size: 90px;
   background-position: -5px 95px;
 }
+@media screen and (max-width:576px){
+  .gota2{
+    background-position: 6px 30px;
+  }
+}
 
 
 #think-transformation img{
@@ -734,7 +739,7 @@ LOGOS
 }
 
 .what-we-do img {
-  max-width: 30px;
+  width: 30px;
 }
 
 @media screen and (max-width: 768px){
@@ -987,7 +992,7 @@ PRODUCTS SECTION
 }
 
 #digital-transform-items p{
-  font-size: 15px;
+  font-size: 18px;
 }
 
 /* **********
@@ -1038,7 +1043,7 @@ PRODUCTS SECTION
 /* ***********
     DATA MODERNIZATION
     ************ */
-#data-modern-items img {
+.data-modern-items-class img {
   height: 70px;
   background-color: #e6e6e6;
   border-radius: 50%;
@@ -1185,7 +1190,16 @@ color: black;
 .media-body p{
   color: black;
   font-size: 1.1rem;
-  font-weight: 600;
+}
+
+.press-article p:first-child {
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+.press-article span {
+  font-size: 15px;
+  color: grey;
 }
 
 #resource a {
@@ -1230,8 +1244,12 @@ color: black;
 }
 .link-our-investors:hover {
   color: #000;
-  text-decoration: underline;
+  text-decoration: underline !important;
 }
+.our-investors a{
+  text-decoration: underline !important;
+}
+
 
 #aboutus h1{
   color: black;
@@ -1294,12 +1312,22 @@ color: black;
   background-color: #008bfc;
 }
 #footer img{
-  width: 150px;
+  width: 200px;
 }
+
+.sub-footer {
+  margin-top: 10px;
+}
+
+.sub-footer p {
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
 #footer {
   min-width: 50vh;
   font-size: 10px;
-  background-color: 008bfc;
+  background-color: #008bfc;
 }
 
 #social-media p,
@@ -1342,6 +1370,10 @@ color: black;
   margin-bottom: 50px;
 }
 
+.our-partners-carrusel-margin {
+  margin: 30px 0;
+}
+
 .our-partners{
   padding: 40px;
   width: 750px;
@@ -1353,7 +1385,7 @@ color: black;
   width: 200px;
 }
 
-.clienth1 h1{
+.title-celeste {
   color: #5ed1ef !important;
 }
 
@@ -1361,4 +1393,21 @@ color: black;
   font-size: 10px;
 }
 
+
+/* flacha hacia abajo */
+#arrow img{
+  width: 50px !important;
+  box-shadow: none;
+}
+
+#arrowup{
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+#arrowup img{
+  width: 50px !important;
+  box-shadow: none;
+}
 /*# sourceMappingURL=inicio.css.map */
