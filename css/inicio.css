@@ -145,7 +145,7 @@ p {
   SECTION
 **********/
 section {
-  padding-top: 0;
+  padding-top: 30px;
   font-family: 'Avenir' !important;
   display: flex;
   justify-content: center;
@@ -212,7 +212,7 @@ section .section-container {
   content: '';
   height: 1px;
   position: absolute;
-  width: 59%;
+  width: 100%;
   margin: 52px;
   left: 50px;
 }
@@ -825,9 +825,9 @@ PRODUCTS SECTION
   content: '';
   height: 1px;
   position: absolute;
-  width: 55%;
+  width: 65%;
   margin: 60px;
-  right: 230px;
+  right: 195px;
 }
 
 #products #our-products-items p{
@@ -1197,6 +1197,11 @@ color: black;
   margin-bottom: 0;
 }
 
+.press-article .press-content {
+  min-height: 224px;
+  text-overflow: hidden;
+}
+
 .press-article span {
   font-size: 15px;
   color: grey;
@@ -1398,6 +1403,7 @@ color: black;
 #arrow img{
   width: 50px !important;
   box-shadow: none;
+  padding: 0;
 }
 
 #arrowup{
