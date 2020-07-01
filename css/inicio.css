@@ -290,9 +290,9 @@ TECHNOLOGIES --> */
 }
 
 @media screen and (max-width:768px){
-  .state-tecno{
+  /* .state-tecno{
     padding: 20px;
-  }
+  } */
 
 
 }
@@ -680,8 +680,6 @@ LOGOS
 ********************************/
 .think-transformation {
   background-image: url("../imgs/bkgs/Bkg_Section1.png");
-  justify-content: flex-end !important;
-  align-items: center !important;
   padding-top: 50px;
   padding-left: 100px;
   
@@ -703,7 +701,16 @@ LOGOS
 }
 @media screen and (max-width:576px){
   .gota2{
-    background-position: 6px 30px;
+    background-position: 6px 3px;
+  }
+}
+
+@media screen and (max-width:375px){
+  .gota1{
+    background-size: 100px;
+  }
+  .gota2{
+    background-size: 65px;
   }
 }
 
@@ -725,10 +732,16 @@ LOGOS
 @media screen and (max-width: 768px){
   .think-transformation{
     background-size: cover;
-    padding: 100px;
+    padding: 20px;
     /* background-attachment: fixed */
   }
 
+}
+
+@media screen and (orientation: landscape) and (max-width: 812px){
+  .gota2{
+    background-position: -5px 24px;
+  }
 }
 
 /*******************************
@@ -930,10 +943,6 @@ PRODUCTS SECTION
 /* fin de products */
 
 /* WHITE LABEL */
-
-#white-label img{
-  max-height: 300px;
-}
 
 .gray{
   color: #808080 !important;
@@ -1171,6 +1180,9 @@ color: black;
   #togglerBurguer {
     max-height: 100vh !important;
   }
+  #white-label img{
+    width: 500px;
+  }
 }  
 
 
@@ -1209,6 +1221,17 @@ color: black;
 
 #resource a {
   color: var(--main-color-tittle);
+}
+
+.border-lt{
+  border-left: ridge;
+  border-right: ridge;
+}
+@media screen and (max-width:768px){
+  .border-lt{
+    border-left: none;
+    border-right: none;
+  }
 }
 
 /* *****************
