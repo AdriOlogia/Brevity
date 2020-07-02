@@ -12,15 +12,11 @@ HEADER
     </a>
     
     <!-- BURGUER CONTAINER -->
-    <a href="#togglerBurguer" class="navbar-toggler">
-      <!-- BURGUER  -->
-      <div>
-        <span class="navbar-toggler-icon custom-toggler" id="other"></span>
-      </div>
-    </a>
-    <!-- MENU MOBILE -->
-    <div class="dropdown-menu d-sm-none hidden-menu-style" id="togglerBurguer">
-      <ul class="smooth-scroll navbar-nav text-dark d-flex flex-column align-items-start  mb-5">
+    <div id="new-btn" class="new-btn">
+      <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+    </div>
+    <div id="mainmob" class="mob-style d-lg-none">
+      <ul class="style-mob smooth-scroll navbar-nav text-dark d-flex flex-column align-items-start  mb-5">
         <li>
           <a href="<?php echo BASE_URL; ?>products" class="nav-link"><strong>PRODUCTS</strong></a>
         </li>
@@ -46,11 +42,12 @@ HEADER
         </li>
         <li> <a href="#our-partners-carrusel" class="nav-link">partners</a>
         </li>
-        <li> <a href="#notice-resource" class="nav-link">resourse</a>
+        <li> <a href="#notice-resource" class="nav-link">resources</a>
         </li>
       </ul>
-
     </div>
+
+
     <!-- MENU DESKTOP -->
     <div class="d-none d-lg-flex d-flex align-items-center" id="desktop-line">
       <ul class="navbar smooth-scroll navbar-nav text-dark">
