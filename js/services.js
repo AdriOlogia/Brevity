@@ -35,5 +35,6 @@ const updateTab = () => {
 const updateWindow = (event) => {
   updateInPageMenu(event)
   updateTab()
+  $('#new-btn').click();
 }
 

@@ -45,6 +45,7 @@ function SendForm() {
 				//Debug(c);
 				if (evalresult.Eval(c)) {
 					frm.reset();
+					$('.bd-example-modal-lg').modal('show');
 				}
 			}
 		});
