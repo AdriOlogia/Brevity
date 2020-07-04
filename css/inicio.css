@@ -141,6 +141,32 @@ p {
   font-weight: normal;
 }
 
+/* *********
+    social media imagenes
+  ********* */
+.red-social{    
+  position: fixed;
+  bottom: 40px;
+  right: 35px;
+}
+
+.red-social-estilos img{
+  width: 30px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 5px;
+}
+.red-social-estilos a{
+  display: block;
+}
+
+@media screen and (max-width:768px){
+  .red-social{
+    display: none;
+  }
+}
+
+
 /**********
   SECTION
 **********/
@@ -196,10 +222,9 @@ section .section-container {
   }
 }
 
-
-/* lending Platataform */
-
-
+.contact-information li a{
+  color: black;
+}
 
 /* consulting and software */
 
@@ -534,6 +559,8 @@ LOGOS
 
 
 
+
+
 /* Resolucion para IOS */
 @media (max-width: 415px){
   #in-page-menu ul li{
@@ -711,6 +738,7 @@ LOGOS
 #think-transformation {
   background-image: url("../imgs/bkgs/Bkg_Section1.png");
   padding-top: 70px;
+  background-size: cover;
   
 }
 
@@ -766,16 +794,32 @@ LOGOS
 
 @media screen and (orientation: landscape) and (max-width: 812px){
   .gota2{
-    background-position: -5px 24px;
+    background-position: -3px -3px;
+    background-size: 65px;
   }
+  .gota1{
+    background-position: 10px -3px;
+    background-size: 95px;
+  }
+  .border-lt{
+    border-right: none !important;
+    border-left: none !important;
+  }
+  .press-article .press-content{
+    min-height: 1px !important;
+  }
+  
 }
 
 /*******************************
   WHATWEDO SECTION
 ********************************/
-.line-left{
-  border-left: solid black;
+@media screen and (min-width: 768px){
+  .line-left{
+    border-left: solid black;
+  }
 }
+
 
 .what-we-do img {
   width: 30px;
@@ -796,6 +840,31 @@ LOGOS
   }
 
 }
+
+@media screen and (orientation: landscape) and (max-width: 812px){
+  .line-left{
+    border-left: none;
+    border-bottom: 1px solid; 
+
+  }
+  .key-border-botm{
+    box-shadow: none !important;
+  }
+
+  .line-down{
+    border-bottom: 1px solid;
+    text-align: left;
+    padding-bottom: 10px;
+  }
+ 
+  #partners-title{
+    
+    padding-left: 150px;
+  }
+  
+}
+
+
 
 
 
@@ -823,6 +892,7 @@ LOGOS
 }
 .contact-us .contact-info-container .contact-information {
   margin: 40px 20px !important;
+  color: black;
   
 }
 .contact-us .contact-info-container .contact-information .contact-city {
@@ -873,7 +943,7 @@ PRODUCTS SECTION
 #products #our-products-items p{
   font-size: 15px;
   color: white;
-  text-align: initial;
+  text-align: center;
   font-family: Quicksand;
 }
 
@@ -981,7 +1051,12 @@ PRODUCTS SECTION
    width: 350px;
  }
 }
-
+@media screen and (max-width: 378px){
+  #white-label{
+    margin-top: 10px !important;
+    padding-top: 10px !important;
+  }
+}
 
 
 
@@ -1029,6 +1104,12 @@ PRODUCTS SECTION
 
 #digital-transform-items p{
   font-size: 18px;
+}
+
+@media screen and (max-width: 375px){
+  .size-h1-phone h1{
+    font-size: 42px
+  }
 }
 
 /* **********
@@ -1197,6 +1278,15 @@ color: black;
   }
 }
 
+@media screen and (orientation: landscape) and (max-width: 812px){
+  .slick-dotted.slick-slider{
+    padding-right: 45px;
+  }
+  .slick-next {
+    right: 35px;
+  }
+}
+
 .dropdown-divider {
   width: 100%;
   margin-left: -12px;
@@ -1226,6 +1316,7 @@ color: black;
   section{
     padding-top: 80px !important;
   }
+  
 }  
 
 
@@ -1274,6 +1365,10 @@ color: black;
   .border-lt{
     border-left: none;
     border-right: none;
+  }
+  .press-article .press-content {
+    min-height: 1px;
+    text-overflow: hidden;
   }
 }
 
@@ -1370,6 +1465,12 @@ color: black;
   color: white !important;
 }
 
+@media screen and (max-width: 425px){
+  .colum-display{
+    display: block !important;
+  }
+}
+
 
 /************
       FOOTER 
@@ -1439,7 +1540,7 @@ color: black;
 }
 
 .our-partners{
-  padding: 40px;
+  padding: 40px 0;
   width: 750px;
   margin: 0 auto;
   
@@ -1485,14 +1586,13 @@ color: black;
   position: absolute !important;
   top: 40px !important;
   background: white;
-  padding-bottom: 50px;
   width: 300px;
   max-width: 300px;
   left: 0;
   z-index: 1000;
   float: left;
   min-width: 10rem;
-  padding: 20px;
+  padding: 10px 0px 10px 10px;
   margin: .125rem 0 0;
   font-size: 1rem;
   text-align: left;
@@ -1512,21 +1612,6 @@ color: black;
 @media screen and (min-width:813px){
   #new-btn{
     visibility: hidden;
-  }
-}
-
-
-@media screen and (max-width: 970px){
-  #new-btn{
-    
-  }
-}
-
-
-
-@media screen and (max-width: 768px){
-  #new-btn{
-    
   }
 }
 
