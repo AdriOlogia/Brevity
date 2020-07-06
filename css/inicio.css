@@ -182,32 +182,12 @@ section {
 }
 
 @media screen and (max-width: 540px){
-  section {
-    margin-top: 60px;
-    padding-top: 75px;
-  }
-  #our-value{
-    margin-top: 60px;
-    padding-top: 75px;
-  }
-  #we-are{
-    margin-top: 60px;
-    padding-top: 75px;
-  }
+  
 }
 
-@media screen and (max-width: 378px){
+@media screen and (max-width: 420px){
   section{
-    margin-top: 60px;
-    padding-top: 75px;
-  }
-  section .section-container{
-    margin-top: 60px;
-  }
-}
-@media (max-width:576px) and (min-width: 378px) {
-  section{
-    margin-top: 40px;
+    padding-top: 75px
   }
 }
 
@@ -241,7 +221,7 @@ section .section-container {
 }
 
 .consulting-and-software h5{
-  text-transform: capitalize;
+  text-transform: initial;
 }
 
 .consulting-and-software h4{
@@ -373,12 +353,14 @@ TECHNOLOGIES --> */
 .our-value h5{
   color: white;
 }
+.our-value p{
+  text-align: start;
+}
 
 .our-value-h5 {
   font-weight: 600;
   min-height: 48px;
   text-transform: initial;
-  text-align: left;
 }
 .our-value p{
   font-size: 15px;
@@ -407,9 +389,6 @@ TECHNOLOGIES --> */
 
 @media screen and (max-width: 768px){
 
-  .our-value{
-    padding: 20px;
-  }
 
   .our-value-h5{
     min-height: 0;
@@ -474,6 +453,10 @@ TECHNOLOGIES --> */
   font-size: 17px;
 }
 
+#we-are-1 p{
+  text-align: justify;
+}
+
 #we-are-2 h3{
   font-weight: bold;
   text-transform: none;
@@ -481,14 +464,6 @@ TECHNOLOGIES --> */
   margin-bottom: 2rem;
   padding: 10px;
   border: 1px solid #000;
-}
-
-
-@media screen and (max-width: 768px){
-
-  .we-are{
-    padding: 20px;
-  }
 }
 
 
@@ -763,6 +738,13 @@ LOGOS
   .gota2{
     background-position: 6px 3px;
   }
+  .our-value p{
+    text-align: center;
+  }
+  #white-label{
+    min-height: 87vh;
+  }
+    
 }
 
 @media screen and (max-width:375px){
@@ -777,7 +759,7 @@ LOGOS
 
 .think-transformation h4{
   color: white;
-  text-transform: capitalize;
+  text-transform: initial;
 }
 
 .think-transformation h1{
@@ -808,7 +790,16 @@ LOGOS
   .press-article .press-content{
     min-height: 1px !important;
   }
-  
+  .contact-us .contact-info-container{
+    padding-top: 5px !important;
+  }
+  .our-value p,
+  .our-value h5{
+    text-align: center;
+  }
+  #our-value-title{
+    text-align: center;
+  }
 }
 
 /*******************************
@@ -864,6 +855,13 @@ LOGOS
   
 }
 
+@media screen and (orientation: landscape) and (max-width: 670px){
+  #partners-title{
+    
+    padding-left: 0px;
+  }
+}
+
 
 
 
@@ -882,7 +880,12 @@ LOGOS
   color: white !important;
 }
 .contact-us .contact-info-container {
-  padding-top: 130px !important;
+  padding-top: 130px;
+}
+@media screen and (max-width: 768px){
+  .contact-us .contact-info-container{
+    padding-top: 5px !important;
+  }
 }
 .contact-us .contact-info-container h2 {
   margin: 0 !important;
@@ -992,6 +995,7 @@ PRODUCTS SECTION
 @media screen and (max-width: 768px){
   .key-border-botm{
     box-shadow: none;
+    margin-bottom: -17px;
   }
 }
 
@@ -1050,13 +1054,11 @@ PRODUCTS SECTION
  #white-label-item img{
    width: 350px;
  }
+ .contact-us h2 {
+  padding-top: 100px;
 }
-@media screen and (max-width: 378px){
-  #white-label{
-    margin-top: 10px !important;
-    padding-top: 10px !important;
-  }
 }
+
 
 
 
@@ -1082,12 +1084,6 @@ PRODUCTS SECTION
 }
 
 
-@media screen and (max-width: 768px){
-  #our-services{
-    padding-top: 100px;
-  }
-}
-
 
 
 /* ++++++++++++++++++++++
@@ -1108,7 +1104,8 @@ PRODUCTS SECTION
 
 @media screen and (max-width: 375px){
   .size-h1-phone h1{
-    font-size: 42px
+    font-size: 38px;
+    padding-left: 0px;
   }
 }
 
@@ -1149,7 +1146,7 @@ PRODUCTS SECTION
   border-radius: 50%;
   padding: 20px;
   margin: 0 auto 20px auto;
-  text-align: center;
+  text-align: center !important;
 }
 
 @media screen and (max-width:768px){
@@ -1346,6 +1343,7 @@ color: black;
 .press-article .press-content {
   min-height: 224px;
   text-overflow: hidden;
+  text-align: justify;
 }
 
 .press-article span {
@@ -1429,6 +1427,7 @@ color: black;
 
 #about-us-items p {
   font-size: 12px;
+  text-align: justify;
 }
 
 #about-us-items h5{
