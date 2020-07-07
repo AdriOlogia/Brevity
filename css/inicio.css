@@ -733,10 +733,11 @@ LOGOS
 }
 @media screen and (max-width:576px){
   .gota1{
-    background-size: 100px;
+    background-size: 75px;
   }
   .gota2{
     background-position: 6px 3px;
+    background-size: 75px;
   }
   .our-value p{
     text-align: center;
@@ -744,17 +745,13 @@ LOGOS
   #white-label{
     min-height: 87vh;
   }
-    
+  #data-modernization{
+    padding-top: 30px;
+  }
+  
+
 }
 
-@media screen and (max-width:375px){
-  .gota1{
-    background-size: 100px;
-  }
-  .gota2{
-    background-size: 65px;
-  }
-}
 
 
 .think-transformation h4{
@@ -781,7 +778,7 @@ LOGOS
   }
   .gota1{
     background-position: 10px -3px;
-    background-size: 95px;
+    background-size: 75px;
   }
   .border-lt{
     border-right: none !important;
@@ -1102,9 +1099,9 @@ PRODUCTS SECTION
   font-size: 18px;
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 420px){
   .size-h1-phone h1{
-    font-size: 38px;
+    font-size: 43px;
     padding-left: 0px;
   }
 }
