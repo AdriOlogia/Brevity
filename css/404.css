@@ -60,7 +60,30 @@
 	overflow: hidden;
   }
   
+  /* *********
+    social media imagenes
+  ********* */
+.red-social{    
+	position: fixed;
+	bottom: 40px;
+	right: 35px;
+  }
   
+  .red-social-estilos img{
+	width: 30px;
+	background-color: white;
+	border-radius: 50%;
+	padding: 5px;
+  }
+  .red-social-estilos a{
+	display: block;
+  }
+  
+  @media screen and (max-width:768px){
+	.red-social{
+	  display: none;
+	}
+  }
   
   /**********
 	BASE
