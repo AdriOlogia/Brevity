@@ -3,99 +3,35 @@
 HEADER
 ===================================
 -->
-<header class="mb-3 fixed-top">
+<header class="my-3 mx-5">
 
-  <nav id="mainNav" class="container-fluid navbar-expand-lg navbar d-flex justify-content-between flex-nowrap">
+  <nav id="mainNav" class="navbar navbar-expand-md">
     <!-- BRAND -->
     <a href="<?php echo BASE_URL; ?>">
-      <img src="imgs/logos/logo_OMbuTech.png" class="logoOmbu" alt="logoOmbu">
+      <img src="../../imgs/brevity.png" class="brevity navbar-brand" alt="brevity">
     </a>
+
+    <!-- menu desktop -->
+    <ul class="navbar-nav ml-auto">
+
+      <li class="nav-item" class="nav-link">
+        <a class="btn btn-link" href="#">Boton 1</a>
+      </li>
+      <li class="nav-item" class="nav-link">
+        <a class="btn btn-link" href="#">Boton 2</a>
+      </li>
+      <li class="nav-item mr-5" class="nav-link">
+        <a class="btn btn-link" href="#">Boton 3</a>
+      </li>
+      <li class="nav-item mr-1" class="nav-link">
+        <button type="button" class="btn btn-secondary" href="#">Get Started</button>
+      </li>
+      <li class="nav-item" class="nav-link">
+        <button type="button" class="btn btn-outline-dark" href="">Login</button>
+      </li>
+
+    </ul>
+
     
-    <!-- BURGUER  CONTAINER -->
-    <div id="new-btn" class="new-btn">
-      <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
-    </div>
-    <div id="mainmob" class="mob-style d-lg-none">
-      <ul class="style-mob smooth-scroll navbar-nav text-dark d-flex flex-column align-items-start  mb-5">
-        <li>
-          <a href="<?php echo BASE_URL; ?>products" class="nav-link"><strong>PRODUCTS</strong></a>
-        </li>
-        <li>
-          <a href="<?php echo BASE_URL; ?>services" class="nav-link">SERVICES</a>
-        </li>
-        <li>
-          <a href='<?php echo BASE_URL; ?>services#digital-transform' class="gray pl-1" onclick="updateWindow()">Digital
-            Transformation Consulting</a>
-        </li>
-        <li>
-          <a href='<?php echo BASE_URL; ?>services#cto-service' class="gray pl-1" onclick="updateWindow()">CTO Services</a>
-        </li>
-        <li>
-          <a href='<?php echo BASE_URL; ?>services#data-modernization' class="gray pl-1" onclick="updateWindow()">Data
-            Modernization</a>
-        </li>
-        <li>
-          <a href='<?php echo BASE_URL; ?>services#cloud-service' class="gray pl-1" onclick="updateWindow()">Cloud
-            Services</a>
-        </li>        
-        <li> <a href="<?php echo BASE_URL; ?>#we-are" class="nav-link">about us</a>
-        </li>
-        <li> <a href="<?php echo BASE_URL; ?>#our-partners-carrusel" class="nav-link">partners</a>
-        </li>
-        <li> <a href="<?php echo BASE_URL; ?>#notice-resource" class="nav-link">resources</a></li>
-        <li class="d-flex align-items-center">
-          <a href="<?php echo BASE_URL; ?>contactus" class="top-boton px-lg-4 contact-us-link btn btn-sm btn-block">CONTACT US</a>
-        </li>
-      </ul>
-    </div>
-
-
-    <!-- MENU DESKTOP -->
-    <div class="d-none d-lg-flex d-flex align-items-center" id="desktop-line">
-      <ul class="navbar smooth-scroll navbar-nav text-dark">
-        <li class="d-flex align-items-center dropdown-link">
-          <!-- dropdown link -->
-          <a class="px-lg-4" href='<?php echo BASE_URL; ?>products'>PRODUCTS</a>          
-        </li>
-      </ul>
-      <li class="d-flex align-items-center dropdown-link">
-        <!-- dropdown item -->
-        <a class="px-lg-4" href='<?php echo BASE_URL; ?>services'>SERVICES</a>
-        <!-- dropdown list -->
-        <ul class="dropdown-list">
-          <li class="deepdown-link">
-            <!-- deep link -->
-            <a href='<?php echo BASE_URL; ?>services#digital-transform' onclick="updateWindow()"><span style="color: var(--main-color-tittle); font-size:16px; margin-right: 5px;">&#8594;</span>Digital
-              Transformation Consulting</a>
-            <div class="dropdown-divider"></div>
-            <a href='<?php echo BASE_URL; ?>services#cto-service' onclick="updateWindow()"><span style="color: var(--main-color-tittle); font-size:16px; margin-right: 5px;">&#8594;</span>CTO Services</a>
-            <div class="dropdown-divider"></div>
-            <a href='<?php echo BASE_URL; ?>services#data-modernization' onclick="updateWindow()"><span style="color: var(--main-color-tittle); font-size:16px; margin-right: 5px;">&#8594;</span>Data Modernization</a>
-            <div class="dropdown-divider"></div>
-            <a href='<?php echo BASE_URL; ?>services#cloud-service' onclick="updateWindow()"><span style="color: var(--main-color-tittle); font-size:16px; margin-right: 5px;">&#8594;</span>Cloud Services</a>
-          </li>
-        </ul>
-      </li>
-      <li class="d-flex align-items-center">
-        <a class="px-lg-4" href="<?php echo BASE_URL; ?>#we-are">ABOUT US</a>
-      </li>
-
-      <li class="d-flex align-items-center">
-        <a class="px-lg-4" href="#our-partners-carrusel">PARTNERS</a>
-      </li>
-
-      <li class="d-flex aling-items-center">
-        <a class="px-lg-4" href="#notice-resource">RESOURCES</a>
-      </li>
-
-      <li class="d-flex align-items-center">
-        <a href="<?php echo BASE_URL; ?>contactus" class="top-boton px-lg-4 contact-us-link btn btn-sm btn-block">CONTACT US</a>
-      </li>
-      <li role="separator" class="header-separetor"></li>
-      <li class="idioms">
-        <a href="#">English</a><img src="../../imgs/arrow-down.svg" alt="Idioma">
-      </li>
-      </ul>
-    </div>
   </nav>
 </header>
