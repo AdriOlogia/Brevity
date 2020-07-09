@@ -9,7 +9,7 @@ define("JSON_HACELO_BONITO_CON_ARRAY",JSON_PRETTY_PRINT+JSON_NUMERIC_CHECK+JSON_
 define("INTERFACE_TYPE",'frontend');
 
 // Título por omisión.
-define("MAINTITLE","Digital solutions for businesses seeking to innovate");
+define("MAINTITLE","Brevity");
 
 // Archivos del tinglado
 define("DEFAULT_SITE_HEAD","head");

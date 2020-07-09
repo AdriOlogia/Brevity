@@ -3,35 +3,38 @@
 HEADER
 ===================================
 -->
-<header class="my-3 mx-5">
-
-  <nav id="mainNav" class="navbar navbar-expand-md">
-    <!-- BRAND -->
-    <a href="<?php echo BASE_URL; ?>">
-      <img src="../../imgs/brevity.png" class="brevity navbar-brand" alt="brevity">
-    </a>
-
-    <!-- menu desktop -->
-    <ul class="navbar-nav ml-auto">
-
-      <li class="nav-item" class="nav-link">
-        <a class="btn btn-link" href="#">Boton 1</a>
-      </li>
-      <li class="nav-item" class="nav-link">
-        <a class="btn btn-link" href="#">Boton 2</a>
-      </li>
-      <li class="nav-item mr-5" class="nav-link">
-        <a class="btn btn-link" href="#">Boton 3</a>
-      </li>
-      <li class="nav-item mr-1" class="nav-link">
-        <button type="button" class="btn btn-secondary" href="#">Get Started</button>
-      </li>
-      <li class="nav-item" class="nav-link">
-        <button type="button" class="btn btn-outline-dark" href="">Login</button>
-      </li>
-
-    </ul>
-
-    
-  </nav>
+<header class="pt-3 fixed-top" id="NavMenu">
+  <div class="container-fluid">
+    <nav id="mainNav" class="navbar navbar-expand-md">
+      <!-- BRAND -->
+      <a href="<?php echo BASE_URL; ?>">
+        <img src="../../imgs/brevity.png" class="brevity navbar-brand" alt="brevity">
+      </a>
+  
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menuMobil">
+        <i class="fas fa-bars fa-2x"></i>
+      </button>
+      <!-- menu desktop -->
+      <div class="collapse navbar-collapse" id="menuMobil">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="btn btn-link nav-link" href="<?php echo BASE_URL; ?>#caracteristicas">Boton 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-link nav-link" href="<?php echo BASE_URL; ?>#presentacion">Boton 2</a>
+          </li>
+          <li class="nav-item mr-lg-5">
+            <a class="btn btn-link nav-link" href="<?php echo BASE_URL; ?>#version-mode">Boton 3</a>
+          </li>
+          <li class="nav-item mr-lg-1">
+            <a type="button" class="btn btn-secondary nav-link" href="#">Get Started</a>
+          </li>
+          <li class="nav-item">
+            <a type="button" class="btn btn-outline-dark nav-link" href="#">Login</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  
 </header>

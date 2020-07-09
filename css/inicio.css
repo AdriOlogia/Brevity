@@ -1,6 +1,7 @@
 :root {
   --background--color: #e5e9f2;
   --background--grey: #a6abb1;
+  --background--footer: #47525e;
 
 
 }
@@ -109,12 +110,12 @@ p {
   SECTION
 **********/
 section {
-  padding-top: 30px;
+  padding-top: 40px;
   font-family: 'Avenir' !important;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 85vh;
+  min-height: 90vh;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -123,7 +124,9 @@ section {
 /* ***********
     Navbar navegacion
   ************* */
-
+  #NavMenu{
+    background-color: var(--background--color);
+  }
   #mainNav .brevity{
     width: 100px;
   }
@@ -163,6 +166,9 @@ section {
   .caract-section{
     background-color: var(--background--grey);
   }
+  .caract-section h5{
+    color: white;
+  }
   .marcas-items{
     background-color: var(--background--color);
     padding: 25px;
@@ -188,4 +194,33 @@ section {
 
   .version-item{
     border: 1px solid black;
+  }
+
+  /* ********************
+      SECTION V  Formulario
+    *************** 
+  */
+
+  #form-mensaje{    
+    max-width: 700px;
+    min-height: 200px;
+  }
+
+
+  /* *************
+      FOOTER
+    *****************/
+
+  .footer{
+    background-color: var(--background--footer);
+  }
+
+  .footer a,
+  .footer p{
+    color: white;
+    font-size: 15px;
+  }
+
+  .logoBrevity img{
+    width: 100px;
   }
