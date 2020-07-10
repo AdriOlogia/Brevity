@@ -1,2 +1,71 @@
 <?php
 ?>
+
+
+<section id="metodo-pago" class="metodo-pago mb-5">
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-between">
+            <div class="row col-lg-6 pago-items" id="pago-factura">
+                <div class="col-lg-12 mb-3">
+                    <h5>Lorem ipsum, dolor sit amet</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, porro optio pariatur, dicta, sint minima accusantium itaque minus quaerat explicabo asperiores voluptatem. Nam laboriosam nesciunt magni maxime ea labore repellat!</p>                
+                </div>
+                <div class="col-lg 12">
+                    <h5>Lorem ipsum, dolor sit amet</h5>
+                    <hr>
+                    <p>*Nombre del Cliente</p>
+                    <hr>
+                    <p>*Email de facturacion</p>
+                    <hr>
+                    <p>*Dirección de la facturación</p>
+                    <hr>
+                    <p>*País</p>
+                    <hr>
+                    <p>*Ciudad</p>
+                    <hr>
+                </div>
+                <div class="col-lg-12">
+                    <h5>Metodo de Pago</h5>
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                          <a class="nav-link active" href="#credit-card" data-toggle="tab" role="tab">Tarjeta de credito</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#paypal" data-toggle="tab" role="tab">Paypal</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#mercadopago" data-toggle="tab" role="tab">Mercadopago</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active content-tab-pago" id="credit-card">
+                            Tarjeta de Credito <i class="fas fa-credit-card"></i>
+                        </div>
+                        <div role="tabpanel" class="tab-pane content-tab-pago" id="paypal">
+                            Paypal <i class="fab fa-cc-paypal"></i>
+                        </div>
+                        <div role="tabpanel" class="tab-pane content-tab-pago" id="mercadopago">
+                            Mercadopago <i class="fas fa-shopping-cart"></i>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-secondary btn-lg btn-block">Comenzar</button>
+                    <small class="">Al hacer click en 'COMENZAR' acepta los terminos y servicios.</small>
+                </div>
+            </div>
+            <div class="col-lg-5 pago-seleccionado" id="pago-seleccionado">
+                <h5>Estas adquiriendo: </h5>
+                <div class="btn-group">
+                    <button type="button" class=" dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Plan Adquirido
+                    </button>
+                    <hr>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <button class="dropdown-item" type="button">Brevity PRO - Plan Mensual</button>
+                      <button class="dropdown-item" type="button">Brevity Pro - Plan Anual</button>
+                      <button class="dropdown-item" type="button">Brevity LITE - Free</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

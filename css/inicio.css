@@ -206,6 +206,38 @@ section {
     min-height: 200px;
   }
 
+/* ************************************************ */
+/* *************
+      SERVICE SECTION
+    *****************/
+
+  .metodo-pago{
+    margin-top: 70px;
+  }
+
+  .pago-items h5{
+    font-weight: bolder;
+    margin-bottom: 30px;
+
+  }
+
+  .content-tab-pago{
+    text-align: center;
+    height: 100px;
+    padding-top: 40px;
+  }
+
+  @media screen and (max-width: 576px){
+    .pago-seleccionado{
+      margin-top: 60px;
+    }
+  }
+
+
+
+
+
+
 
   /* *************
       FOOTER
