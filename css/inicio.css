@@ -2,6 +2,7 @@
   --background--color: #e5e9f2;
   --background--grey: #a6abb1;
   --background--footer: #47525e;
+  --background--tittle: #47525e;
 
 
 }
@@ -152,28 +153,11 @@ section {
     *************** 
   */
 
-  .Burbuja-carct{
+  .caract{
     min-height: 60vh;
   }
 
-  .caract-item{
-    background: var(--background--color);
-    padding: 100px 10px 100px 10px;
-    margin: 10px;
-    border-radius: 50%;
-  }  
-
-  .caract-section{
-    background-color: var(--background--grey);
-  }
-  .caract-section h5{
-    color: white;
-  }
-  .marcas-items{
-    background-color: var(--background--color);
-    padding: 25px;
-    margin: 10px;
-  }
+  
 
 
   /* ********************
@@ -186,14 +170,62 @@ section {
   }
   
 
+  /* ********************
+      SECTION IV   PARA VOS 
+    *************** 
+  */
+  .para-vos-items{
+    background: rgba(0, 0, 0, 0.80);
+    color: white;
+    padding: 150px 50px 150px 50px;
+  }
+
+
+
+
+
+/* ********************
+      SECTION V    PARTNERS
+    *************** 
+  */
+
+  .partners{
+    min-height: 50vh;
+  }
+
+
+  
+
+
 
   /* ********************
-      SECTION IV   Presentacion 
+      SECTION VI   VERSION MODELOS 
     *************** 
   */
 
   .version-item{
     border: 1px solid black;
+    border-radius: 10px;
+    -webkit-box-shadow: 4px 6px 12px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 6px 12px 0px rgba(0,0,0,0.75);
+    box-shadow: 4px 6px 12px 0px rgba(0,0,0,0.75);
+  }
+
+  .version-item p{
+    font-size: 12px;
+    text-align: initial;
+    padding-left: 10px;
+
+  }
+  
+  .tittle-box-bg{
+    background: var(--background--tittle);
+    color: white;
+    padding: 10px;
+    margin-right: -16px;
+    margin-left: -16px;
+    margin-top: -1px;
+    border-radius: 10px 10px 0 0;
   }
 
   /* ********************
