@@ -123,7 +123,13 @@ section {
     width: 100px;
   }
 
-
+/* buton de comentario */
+.btn-comentario{
+  position: fixed;
+  top: 650px;
+  right: 30px;
+  z-index: 1;
+}
 
 
   /* ********************
@@ -134,23 +140,50 @@ section {
   .vitae-bkg1{
     background: url("../imgs/Brevity-s1.jpg");
     background-size: cover;
+    width: 100%;
+    min-height: 90vh;
+    padding-top: 250px;
     }
   .vitae-bkg2{
     background: url("../imgs/Brevity-s2.jpg");
     background-size: cover;
+    width: 100%;
+    min-height: 90vh;
+    padding-top: 250px;
   }
   .vitae-bkg3{
     background: url("../imgs/Brevity-s3.jpg");
     background-size: cover;
+    width: 100%;
+    min-height: 90vh;
+    padding-top: 250px;
   }
+  
 
 
   .carousel-caption h1,
   .carousel-caption h5{
     color: black;
   }
-
   
+  .slick-prev {
+    left: 90px;
+    z-index: 1;
+  }
+  .slick-prev:before {
+    content: '←';
+    color: blue;
+    font-size: 50px;
+  }
+  .slick-next {
+    right: 100px;
+    z-index: 1;
+  }
+  .slick-next:before {
+    content: '→';
+    color: blue;
+    font-size: 50px;
+  }
 
 
 
@@ -363,5 +396,14 @@ section {
   @media screen and (max-width: 768px){
     .barRight{
       width: 300px !important;
+    }
+    .vitae-bkg1{
+      padding-top: 200px;
+    }
+    .vitae-bkg2{
+      padding-top: 170px;
+    }
+    .vitae-bkg3{
+      padding-top: 170px;
     }
   }
