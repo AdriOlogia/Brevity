@@ -1,8 +1,10 @@
 :root {
-  --background--color: #e5e9f2;
+  --background--color: white;
   --background--grey: #a6abb1;
-  --background--footer: #47525e;
+  --background--footer: black;
   --background--tittle: #47525e;
+  --font--montserrat: montserrat;
+  --font--opensans: opensans;
 
 
 }
@@ -12,40 +14,30 @@
 FONTS
 **********/
 @font-face{
-  font-family: Montserrat-Medium;
-  src: url("../fonts/Montserrat-Medium.ttf");
+  font-family: montserrat;
+  src: url("../fonts/Montserrat-Bold.otf");
 }
-
 @font-face{
-  font-family: Oswald-VariableFont_wght;
-  src: url("../fonts/Oswald-VariableFont_wght.ttf");
-
+  font-family: montserrat;
+  src: url("../fonts/Montserrat-Light.otf");
 }
-
 @font-face{
-  font-family: Quicksand;
-  src: url("../fonts/Quicksand-Bold.ttf");
-
+  font-family: montserrat;
+  src: url("../fonts/Montserrat-Medium.otf");
 }
-
 @font-face{
-  font-family: Quicksand;
-  src: url("../fonts/Quicksand-Light.ttf");
+  font-family: montserrat;
+  src: url("../fonts/Montserrat-Regular.otf");
+}
+@font-face{
+  font-family: opensans;
+  src: url("../fonts/OpenSans-SemiBold_4.ttf");
 }
 
-@font-face {
-  font-family: Quicksand;
-  src: url("../fonts/Quicksand-Medium.ttf");
-}
-
-@font-face {
-  font-family: Quicksand;
-  src: url("Quicksand-SemiBold");
-}
 
 
 * {
-  font-family: 'Quicksand';
+  font-family: var(--font--montserrat);
 }
 
 html {
@@ -87,22 +79,21 @@ li {
 TITLES
 **********/
 h1 {
-  font-family: Oswald-VariableFont_wght, Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: normal;
-  font-size: 50px;
-  font-weight: 600
+  font-family: var(--font--opensans), Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
 }
 
 h2,
 h3,
 h4,
 h5 {
-  font-family: Quicksand, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: var(--font--montserrat), Verdana, Geneva, Tahoma, sans-serif;
   font-weight: normal;
 }
 
 p {
-  font-family: "Montserrat-Medium";
+  font-family: var(--font--montserrat);
+  font-weight: normal;
 }
 
 
@@ -140,8 +131,23 @@ section {
     *************** 
   */
 
-  .vitae-erat{
-  background-color: var(--background--color);
+  .vitae-bkg1{
+    background: url("../imgs/Brevity-s1.jpg");
+    background-size: cover;
+    }
+  .vitae-bkg2{
+    background: url("../imgs/Brevity-s2.jpg");
+    background-size: cover;
+  }
+  .vitae-bkg3{
+    background: url("../imgs/Brevity-s3.jpg");
+    background-size: cover;
+  }
+
+
+  .carousel-caption h1,
+  .carousel-caption h5{
+    color: black;
   }
 
   
@@ -156,6 +162,7 @@ section {
   .caract{
     min-height: 60vh;
   }
+  
 
   
 
@@ -168,6 +175,16 @@ section {
     text-align: center;
     margin-bottom: 30px;
   }
+
+  .well {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .presentacion-items img{
+    width: 30px;
+  }
   
 
   /* ********************
@@ -178,6 +195,10 @@ section {
     background: rgba(0, 0, 0, 0.80);
     color: white;
     padding: 150px 50px 150px 50px;
+  }
+  .para-vos{
+    background: url("../imgs/Brevity-2.jpg");
+    background-size: cover;
   }
 
 
@@ -193,6 +214,14 @@ section {
     min-height: 50vh;
   }
 
+  .partners-logos img{
+    width: 150px;
+  }
+
+  .partners-cards{
+    padding: 50px;
+  }
+
 
   
 
@@ -202,6 +231,9 @@ section {
       SECTION VI   VERSION MODELOS 
     *************** 
   */
+  .version-mode{
+    padding-top: 100px;
+  }
 
   .version-item{
     border: 1px solid black;
@@ -228,14 +260,49 @@ section {
     border-radius: 10px 10px 0 0;
   }
 
+  .version-contenido  a{
+    color: white;
+  }
+
+  .btn-main-rgt{
+    border-radius: 50%;
+  }
+
   /* ********************
-      SECTION V  Formulario
+      SECTION VII  Formulario
     *************** 
   */
 
   #form-mensaje{    
     max-width: 700px;
     min-height: 200px;
+  }
+
+
+/* ********************
+      PUSH BAR
+    *************** 
+  */
+  .barRight{
+    padding: 80px 10px 10px 10px;
+    width: 35% !important;
+  }
+
+  .containBar h1{
+    font-size: 30px;
+  }
+  .containBar p{
+    font-size: 12px;
+  }
+
+  .btn-cerrar button{
+    background: white;
+    cursor: pointer;
+    border: none;
+
+  }
+  .btn-cerrar button i{
+    color: black;
   }
 
 /* ************************************************ */
@@ -287,4 +354,14 @@ section {
 
   .logoBrevity img{
     width: 100px;
+  }
+
+
+  /* *****************
+    media Query
+    *************** */
+  @media screen and (max-width: 768px){
+    .barRight{
+      width: 300px !important;
+    }
   }
