@@ -1,3 +1,10 @@
+<?php
+/*
+	Modif: 2020-07-29
+	Author: DriverOp
+	Desc: Cambiadas rutas relativas por las constantes correspondientes.
+*/
+?>
 :root {
   --background--color: white;
   --background--grey: #a6abb1;
@@ -15,23 +22,23 @@ FONTS
 **********/
 @font-face{
   font-family: montserrat;
-  src: url("../fonts/Montserrat-Bold.otf");
+  src: url("<?php echo URL_fonts; ?>Montserrat-Bold.otf");
 }
 @font-face{
   font-family: montserrat;
-  src: url("../fonts/Montserrat-Light.otf");
+  src: url("<?php echo URL_fonts; ?>Montserrat-Light.otf");
 }
 @font-face{
   font-family: montserrat;
-  src: url("../fonts/Montserrat-Medium.otf");
+  src: url("<?php echo URL_fonts; ?>Montserrat-Medium.otf");
 }
 @font-face{
   font-family: montserrat;
-  src: url("../fonts/Montserrat-Regular.otf");
+  src: url("<?php echo URL_fonts; ?>Montserrat-Regular.otf");
 }
 @font-face{
   font-family: opensans;
-  src: url("../fonts/OpenSans-SemiBold_4.ttf");
+  src: url("<?php echo URL_fonts; ?>OpenSans-SemiBold_4.ttf");
 }
 
 
@@ -122,11 +129,16 @@ section {
   #mainNav .brevity{
     width: 100px;
   }
+  #mainNav ul li,
+  #mainNav ul li button,
+  #mainNav a{
+    font-size: 12px;
+  }
 
 /* buton de comentario */
 .btn-comentario{
   position: fixed;
-  top: 650px;
+  top: 500px;
   right: 30px;
   z-index: 1;
 }
@@ -138,27 +150,46 @@ section {
   */
 
   .vitae-bkg1{
-    background: url("../imgs/Brevity-s1.jpg");
+    background: url("<?php echo URL_imgs; ?>Brevity-s1.jpg");
     background-size: cover;
     width: 100%;
     min-height: 90vh;
     padding-top: 250px;
     }
   .vitae-bkg2{
-    background: url("../imgs/Brevity-s2.jpg");
+    background: url("<?php echo URL_imgs; ?>Brevity-s2.jpg");
     background-size: cover;
     width: 100%;
     min-height: 90vh;
     padding-top: 250px;
   }
   .vitae-bkg3{
-    background: url("../imgs/Brevity-s3.jpg");
+    background: url("<?php echo URL_imgs; ?>Brevity-s3.jpg");
     background-size: cover;
     width: 100%;
     min-height: 90vh;
     padding-top: 250px;
   }
+  .vitae-container h1{
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .vitae-container{
+    max-width: 40%;
+    margin: auto;
+    text-align: left;
+  }
   
+  .slick-dots li.slick-active button:before {
+    color: #0069d9;
+    font-size: 15px;
+  }
+  .slick-dots li button:before{
+    top: -45px;
+  }
+  .slick-dots li button:before{
+    font-size: 10px;
+  }
 
 
   .carousel-caption h1,
@@ -167,22 +198,32 @@ section {
   }
   
   .slick-prev {
-    left: 90px;
+    left: 150px;
     z-index: 1;
   }
   .slick-prev:before {
-    content: '←';
+    content: '';
+    background: url("<?php echo URL_imgs; ?>Recurso\ 2.png");
     color: blue;
     font-size: 50px;
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    opacity: .9;
   }
   .slick-next {
-    right: 100px;
+    right: 160px;
     z-index: 1;
   }
   .slick-next:before {
-    content: '→';
+    content: '';
+    background: url("<?php echo URL_imgs; ?>Recurso\ 1.png");
     color: blue;
     font-size: 50px;
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    opacity: .9;
   }
 
 
@@ -195,7 +236,13 @@ section {
   .caract{
     min-height: 60vh;
   }
-  
+  .caract-items h5{
+    padding-bottom: 15px;
+  }
+
+  .buzon img{
+    width: 175px;
+  }
 
   
 
@@ -204,6 +251,10 @@ section {
       SECTION III   Presentacion 
     *************** 
   */
+  .presentacion {
+    background: url("<?php echo URL_imgs; ?>Brevity-1193999908.jpg");
+    background-size: contain;
+  }
   .presentacion-items h3{
     text-align: center;
     margin-bottom: 30px;
@@ -215,10 +266,32 @@ section {
     margin-bottom: 15px;
   }
 
-  .presentacion-items img{
+  .presentacion-items ul li{
+    padding: 5px !important;
+  }
+  .presentacion ul li img{
     width: 30px;
   }
-  
+
+  .presentacion-img{
+    border-radius: 20px;
+  }
+  .presentacion-img{
+    background: url("<?php echo URL_imgs; ?>presentacionimg.png");
+    background-repeat: round;
+    background-size: cover;
+    padding: 150px;
+  }
+  .blue-line1::before{
+    content: '';
+    height: 1px;
+    background: #0069d9;
+    position: absolute;
+    width: 100px;
+    max-width: 100px;
+    margin: 52px;
+    right: 165px;
+  }
 
   /* ********************
       SECTION IV   PARA VOS 
@@ -230,8 +303,18 @@ section {
     padding: 150px 50px 150px 50px;
   }
   .para-vos{
-    background: url("../imgs/Brevity-2.jpg");
+    background: url("<?php echo URL_imgs; ?>Brevity-2.png");
     background-size: cover;
+    background-position: center;
+  }
+  .blue-line2::before{
+    content: '';
+    height: 1px;
+    background: #0069d9;
+    position: absolute;
+    width: 100px;
+    max-width: 100px;
+    margin: 52px;
   }
 
 
@@ -255,6 +338,16 @@ section {
     padding: 50px;
   }
 
+  .blue-line3::before{
+    content: '';
+    height: 1px;
+    background: #0069d9;
+    position: absolute;
+    width: 100px;
+    max-width: 100px;
+    margin: 52px;
+    left: 500px;
+  }
 
   
 
@@ -266,6 +359,11 @@ section {
   */
   .version-mode{
     padding-top: 100px;
+    background: url("<?php echo URL_imgs; ?>Brevity-1193999908.jpg");
+    background-size: cover;
+  }
+  .version-mode h4{
+    margin-bottom: 30px;
   }
 
   .version-item{
@@ -301,15 +399,7 @@ section {
     border-radius: 50%;
   }
 
-  /* ********************
-      SECTION VII  Formulario
-    *************** 
-  */
-
-  #form-mensaje{    
-    max-width: 700px;
-    min-height: 200px;
-  }
+ 
 
 
 /* ********************
@@ -365,8 +455,18 @@ section {
     }
   }
 
-
-
+/* *************
+      Terminos y condiciones
+    *****************/
+  .terminos-bkg{
+    background: url("<?php echo URL_imgs; ?>Brevity-1193999908.jpg");
+    background-size: cover;
+    background-position: bottom;
+    padding-top: 50px;
+  }
+  .terminos h1{
+    min-height: 20vh;
+  }
 
 
 
@@ -379,14 +479,20 @@ section {
     background-color: var(--background--footer);
   }
 
-  .footer a,
-  .footer p{
+  .footer ul li,
+  .footer a{
     color: white;
-    font-size: 15px;
+    font-size: 12px;
   }
 
   .logoBrevity img{
-    width: 100px;
+    width: 70px;
+  }
+  .logoBrevity{
+    color: white;
+  }
+  .social-media li a{
+    margin: 10px;
   }
 
 
@@ -405,5 +511,26 @@ section {
     }
     .vitae-bkg3{
       padding-top: 170px;
+    }
+    .vitae-container{
+      max-width: 100%;
+      margin: 20px;
+    }
+    .vitae-container h1{
+      font-size: 35px;
+    }
+    .blue-line1::before,
+    .blue-line2::before,
+    .blue-line3::before{
+      display: none;
+    }
+    .presentacion-items{
+      padding-bottom: 30px;
+    }
+    .presentacion{
+      margin-bottom: 30px;
+    }
+    .version-item p{
+      text-align: center;
     }
   }

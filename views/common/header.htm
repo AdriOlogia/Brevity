@@ -8,7 +8,12 @@ HEADER
     <nav id="mainNav" class="navbar navbar-expand-md">
       <!-- BRAND -->
       <a href="<?php echo BASE_URL; ?>">
-        <img src="../../imgs/brevity.png" class="brevity navbar-brand ml-lg-5" alt="brevity">
+<?php
+/*
+	Las constantes como URL_imgs están declaradas en directories.php, no es necesario usar rutas relativas.
+*/
+?>
+        <img src="<?php echo URL_imgs; ?>brevity_logo.png" class="brevity navbar-brand ml-lg-5" alt="brevity">
       </a>
   
       <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menuMobil">
@@ -30,7 +35,7 @@ HEADER
             <button type="button" class="btn btn-primary nav-link">Get Started</button>
           </li>
           <li class="nav-item">
-            <button type="button" id="btnlogin" class="btn btn-outline-dark nav-link">Login</button>
+            <button type="button" id="btnlogin" class="btn btn-outline-primary nav-link">Login</button>
           </li>
         </ul>
       </div>
