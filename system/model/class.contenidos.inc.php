@@ -279,7 +279,7 @@ class cContenido extends cModels {
 		}
 		if (!empty(MAINTITLE) and $withmain) {
 			if (!empty($result)) {
-				$result = $result." :: ".MAINTITLE;
+				$result = $result."  ".MAINTITLE;
 			} else {
 				$result = MAINTITLE;
 			}

@@ -1,17 +1,16 @@
-<?php
-/*
-	Modif: 2020-07-29
-	Author: DriverOp
-	Desc: Cambiadas rutas relativas por las constantes correspondientes.
-*/
-?>
+
 :root {
   --background--color: white;
   --background--grey: #a6abb1;
   --background--footer: black;
   --background--tittle: #47525e;
   --font--montserrat: montserrat;
+  --font-montserrat-bold: montserrat-bold;
+  --font--montserrat-light: montserrat-light;
+  --font--montsettar-regular: montserrat-regular;
   --font--opensans: opensans;
+  --font-opensans-regular: opensans-regular;
+  
 
 
 }
@@ -21,11 +20,11 @@
 FONTS
 **********/
 @font-face{
-  font-family: montserrat;
+  font-family: montserrat-bold;
   src: url("<?php echo URL_fonts; ?>Montserrat-Bold.otf");
 }
 @font-face{
-  font-family: montserrat;
+  font-family: montserrat-light;
   src: url("<?php echo URL_fonts; ?>Montserrat-Light.otf");
 }
 @font-face{
@@ -33,12 +32,20 @@ FONTS
   src: url("<?php echo URL_fonts; ?>Montserrat-Medium.otf");
 }
 @font-face{
-  font-family: montserrat;
+  font-family: montserrat-regular;
   src: url("<?php echo URL_fonts; ?>Montserrat-Regular.otf");
 }
 @font-face{
   font-family: opensans;
-  src: url("<?php echo URL_fonts; ?>OpenSans-SemiBold_4.ttf");
+  src: url("../fonts/OpenSans-Bold.ttf");
+}
+@font-face{
+  font-family: opensans;
+  src: url("../fonts/OpenSans-ExtraBold.ttf");
+}
+@font-face{
+  font-family: opensans-regular;
+  src: url("../fonts/OpenSans-Regular.ttf");
 }
 
 
@@ -55,6 +62,9 @@ html {
   overflow: hidden;
 }
 
+strong{
+  font-family: var(--font--opensans);
+}
 
 
 /**********
@@ -71,7 +81,8 @@ a:hover {
   
 }
 a:hover, a:hover:visited {
-  color: #5ed1ef;
+  color: black;
+  font-weight: bolder;
   text-decoration: none !important;
 }
 
@@ -143,6 +154,31 @@ section {
   z-index: 1;
 }
 
+/* inputs del formulario */
+input,
+.barRight input {
+  border: none;
+  border-bottom: 1px solid black;
+  resize: none;
+  border-radius: 0px;
+}
+input:focus,
+.barRight input:focus{
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+/* modal configuracion */
+.modal-header{
+  border-bottom: none;
+}
+.modal button a{
+  color: white;
+}
+.modal button a:hover{
+  color: white;
+  font-weight: normal;
+}
 
   /* ********************
       SECTION I   VITAE ERAT
@@ -173,11 +209,17 @@ section {
   .vitae-container h1{
     font-family: 'Times New Roman', Times, serif;
   }
+  .vitae-erat a{
+    color: white;
+  }
 
   .vitae-container{
-    max-width: 40%;
+    max-width: 42%;
     margin: auto;
     text-align: left;
+  }
+  .vitae-container h5{
+    font-size: 17px;
   }
   
   .slick-dots li.slick-active button:before {
@@ -198,7 +240,7 @@ section {
   }
   
   .slick-prev {
-    left: 150px;
+    left: 300px;
     z-index: 1;
   }
   .slick-prev:before {
@@ -212,7 +254,7 @@ section {
     opacity: .9;
   }
   .slick-next {
-    right: 160px;
+    right: 350px;
     z-index: 1;
   }
   .slick-next:before {
@@ -220,7 +262,7 @@ section {
     background: url("<?php echo URL_imgs; ?>Recurso\ 1.png");
     color: blue;
     font-size: 50px;
-    padding: 20px;
+    padding: 25px;
     background-repeat: no-repeat;
     background-position-y: center;
     opacity: .9;
@@ -238,12 +280,18 @@ section {
   }
   .caract-items h5{
     padding-bottom: 15px;
+    font-family: var(--font--opensans);
+    font-weight: bolder;
+  }
+  .caract-items p{
+    font-family: var(--font--montserrat-light);
   }
 
   .buzon img{
     width: 175px;
   }
 
+    
   
 
 
@@ -317,6 +365,13 @@ section {
     margin: 52px;
   }
 
+  .para-vos-items h5{
+    font-family: var(--font--montsettar-regular);
+  }
+  .para-vos-items p{
+    font-family: var(--font--montserrat-light);
+  }
+
 
 
 
@@ -362,8 +417,16 @@ section {
     background: url("<?php echo URL_imgs; ?>Brevity-1193999908.jpg");
     background-size: cover;
   }
-  .version-mode h4{
+  .version-mode h5{
     margin-bottom: 30px;
+  }
+
+  .version-mode button a:hover{
+    color: white;
+  }
+
+  .span-h1 {
+    color: #3a69ff;
   }
 
   .version-item{
@@ -399,6 +462,11 @@ section {
     border-radius: 50%;
   }
 
+  .solid-border-b{
+    border-bottom: solid;
+    border-bottom-style: ridge;
+  }
+
  
 
 
@@ -408,7 +476,7 @@ section {
   */
   .barRight{
     padding: 80px 10px 10px 10px;
-    width: 35% !important;
+    width: 30% !important;
   }
 
   .containBar h1{
@@ -426,6 +494,10 @@ section {
   }
   .btn-cerrar button i{
     color: black;
+  }
+  
+  .barRight label{
+    font-family: var(--font-montserrat-bold);
   }
 
 /* ************************************************ */
@@ -466,6 +538,7 @@ section {
   }
   .terminos h1{
     min-height: 20vh;
+    padding: 10px 10px 10px 70px;
   }
 
 
@@ -494,6 +567,18 @@ section {
   .social-media li a{
     margin: 10px;
   }
+  .footer a:hover, .footer a:hover:visited{
+    color: white;
+    font-weight: bolder;
+  }
+  .btn-ayuda{
+    border: none;
+    background: black;
+    color: white;
+  }
+  .btn-ayuda:focus{
+    outline: none;
+  }
 
 
   /* *****************
@@ -502,6 +587,7 @@ section {
   @media screen and (max-width: 768px){
     .barRight{
       width: 300px !important;
+      z-index: 99999;
     }
     .vitae-bkg1{
       padding-top: 200px;
@@ -533,4 +619,18 @@ section {
     .version-item p{
       text-align: center;
     }
+    .buttn-started{
+      margin-bottom: 10px;
+    }
+  }
+
+  @media screen and (orientation: landscape) and (max-width: 830px){
+
+    .vitae-bkg1,
+    .vitae-bkg2,
+    .vitae-bkg3{
+      padding-top: 100px !important;
+      padding-bottom: 30px;
+    }
+
   }
